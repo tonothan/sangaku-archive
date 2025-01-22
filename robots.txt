@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tonothan.github.io/sangaku-archive
+
+# Sitemaps
+Sitemap: https://tonothan.github.io/sangaku-archive/sitemap.xml
