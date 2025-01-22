@@ -1,0 +1,115 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://example.org/iiif/collection/sangaku-archive",
+    "type": "Collection",
+    "label": {
+      "en": ["Sample IIIF Collection"]
+    },
+    "summary": {
+      "en": ["Sangaku archive preview."]
+    },
+    "items": [
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/85.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 85"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/1.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 1"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/34.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 34"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/39.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 39"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/40.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 40"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/41.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 41"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/42.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 42"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/43.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 43"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/44.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 44"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/45.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 45"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/125.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 125"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/106.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 106"]
+        }
+      },
+      {
+        "id": "https://sangaku-archive.org/app/api/manifests/3/36.json",
+        "type": "Manifest",
+        "label": {
+          "en": ["Sangaku Tablet 36"]
+        }
+      }
+    ],
+    "seeAlso": [
+      {
+        "id": "https://example.org/api/sangaku-metadata",
+        "type": "Dataset",
+        "format": "application/json",
+        "label": {
+          "en": ["Additional Sangaku Metadata"]
+        }
+      }
+    ]
+  }
+  
