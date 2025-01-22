@@ -1,10 +1,10 @@
 {
   "collection": "https://example.org/iiif/collection.json",
   "devCollection": "https://example.org/iiif/collection-small-sample.json",
-  //"featured": [
-  //  "https://example.org/manifest-1.json",
-  //  "https://example.org/manifest-2.json"
-  //],
+  "featured": [
+    "https://example.org/manifest-1.json",
+    "https://example.org/manifest-2.json"
+  ],
   "metadata": ["Date", "Subject"],
   "label": { "none": ["Collection Title"] },
   "summary": {
