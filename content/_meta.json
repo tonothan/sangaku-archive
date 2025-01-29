@@ -1,11 +1,15 @@
 [
   {
     "path": "/works",
-    "text": "Browse all Sangaku"
+    "text": "Browse all"
   },
   {
     "path": "/metadata",
     "text": "Browse by Metadata"
+  },
+  {
+    "path": "/problems",
+    "text": "Solve Problems"
   },
   {
     "path": "/about",
