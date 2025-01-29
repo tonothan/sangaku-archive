@@ -1,9 +1,8 @@
 {
   "collection": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
-  "metadata": ["Year", "Prefecture", "Dedication Site", "Author", "School", "Size", "Note"],
+  "metadata": ["Year", "Prefecture", "Dedication Site", "Author", "School"],
   "featured": [
-    "https://sangaku-archive.org/app/api/manifests/3/85.json",
-    "https://sangaku-archive.org/app/api/manifests/3/106.json"
+    "https://tonothan.github.io/canopy_samplemanifest-2.json"
   ],
   "locales": [
     {
@@ -14,7 +13,7 @@
     {
       "config": "locales/jp.json",
       "label": "Japanese",
-      "lang": "jp"
+      "lang": "ja"
     }
   ],
   "map": {
