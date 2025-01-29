@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://tonothan.github.io/sangaku-archive</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/about</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/metadata</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/search</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/about/example</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/about/index</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/atago-honji-hall-tokyo-1804-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/matsubara-shrine-kanagawa-1802-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/oji-shrine-wakayama-1865-original</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/hirakawa-temman-shrine-tokyo-1796-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/hirakawa-temman-shrine-tokyo-1804-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/hakun-mountain-gumma-1797-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/hitoyoshi-aoi-shrine-kumamoto-1798-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/hachiman-shrine-yamaguchi-1799-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/sumiyoshi-daimyojin-shrine-hyogo-1800-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/kumano-shrine-gumma-1801-book</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/naritasan-shinsho-ji-chiba-1897-original</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/naritasan-shinsho-ji-chiba-1869-replica</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://tonothan.github.io/sangaku-archive/works/ogami-shrine-aomori-1812-original</loc><lastmod>2025-01-29T02:52:42.783Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/about</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/metadata</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/search</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/works</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/about/example</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://tonothan.github.io/sangaku-archive/about/index</loc><lastmod>2025-01-29T03:02:45.782Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
