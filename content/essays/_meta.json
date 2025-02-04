@@ -10,5 +10,9 @@
   {
     "path": "/essays/easy",
     "text": "Easy problems"
+  },
+  {
+    "path": "/essays/easy/mishima-problem",
+    "text": "Mishima problem"
   }
 ]
