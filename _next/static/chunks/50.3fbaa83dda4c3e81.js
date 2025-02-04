@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[50],{50:function(s){s.exports=JSON.parse('[{"path":"/essays/easy/mishima-problem","text":"Mishima problem"}]')}}]);
