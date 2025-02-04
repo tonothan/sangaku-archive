@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[795],{7795:function(e){e.exports=JSON.parse('[{"path":"/problems","text":"Problems"},{"path":"/problems/Chiba-museum","text":"Solution Example"}]')}}]);
