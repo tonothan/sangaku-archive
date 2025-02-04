@@ -2,17 +2,16 @@
   {
     "path": "/essays",
     "text": "Contemporary Solutions"
-  },
-  {
-    "path": "/essays/Chiba-museum",
-    "text": "First problem"
-  },
-  {
+  },  {
     "path": "/essays/easy",
     "text": "Easy problems"
+  },  {
+    "path": "/essays/medium",
+    "text": "Medium problems"
   },
   {
-    "path": "/essays/easy/mishima-problem",
-    "text": "Mishima problem"
+    "path": "/essays/hard",
+    "text": "Hard problems"
   }
+
 ]
