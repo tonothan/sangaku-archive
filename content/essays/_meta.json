@@ -1,10 +1,10 @@
 [
   {
     "path": "/essays",
-    "title": "Contemporary Solutions"
+    "text": "Contemporary Solutions"
   },
   {
     "path": "/essays/Chiba-museum",
-    "title": "First problem"
+    "text": "First problem"
   }
 ]
