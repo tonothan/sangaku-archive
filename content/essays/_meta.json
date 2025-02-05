@@ -5,6 +5,12 @@
   },  {
     "path": "/essays/easy",
     "text": "Easy problems"
+    "items":[
+      {
+        "title": "Mishima problem"
+        "path": "/easy/mishima-problem"
+      }
+    ]
   },  {
     "path": "/essays/medium",
     "text": "Medium problems"
