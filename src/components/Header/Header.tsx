@@ -41,11 +41,11 @@ const Header = () => {
             as="h1"
             size="5"
             weight="medium"
-            style={{ display: "flex", alignItems: "center" }}>
+            style={{ display: "flex", alignItems: "center", fontSize: "1.2em" }}>
             <img 
-            src="https://tonothan.github.io/mock-logo.png" 
+            src="https://tonothan.github.io/mock-logo-withscript.png" 
             alt="Site Logo" 
-            style={{ height: "1em", width: "auto", marginRight: "10px" }}
+            style={{ height: "1.2em", width: "auto", marginRight: "10px" }}
             />
           </Heading>
         </Link>
