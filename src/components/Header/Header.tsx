@@ -43,9 +43,12 @@ const Header = () => {
             as="h1"
             size="5"
             weight="medium"
-            style={{ fontFamily: "var(--canopy-display-font)" }}
-          >
-            <Label label={collections[0].label} as="span" />
+            style={{ display: "flex", alignItems: "center" }}>
+            <img 
+            src="https://tonothan.github.io/mock-logo.png" 
+            alt="Site Logo" 
+            style={{ height: "1em", width: "auto", marginRight: "10px" }}
+            />
           </Heading>
         </Link>
         <ResponsiveActions>
