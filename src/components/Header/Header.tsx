@@ -43,7 +43,7 @@ const Header = () => {
             weight="medium"
             style={{ display: "flex", alignItems: "center", fontSize: "1.2em" }}>
             <img 
-            src="https://tonothan.github.io/mock-logo-withscript.png" 
+            src="https://tonothan.github.io/mock-logo-withscript.jpg" 
             alt="Site Logo" 
             style={{ height: "1.2em", width: "auto", marginRight: "10px" }}
             />
