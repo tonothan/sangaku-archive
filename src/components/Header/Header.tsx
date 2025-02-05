@@ -47,6 +47,9 @@ const Header = () => {
             alt="Site Logo" 
             style={{ height: "1.2em", width: "auto", marginRight: "10px" }}
             />
+            <span style={{ fontFamily: "var(--canopy-display-font)", color: "var(--gray-12)" }}>
+            算額アーカイブ
+          </span>
           </Heading>
         </Link>
         <ResponsiveActions>
