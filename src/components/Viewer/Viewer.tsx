@@ -25,15 +25,15 @@ const defaultOptions = {
   canvasHeight: `600px`,
   openSeadragon: {
     gestureSettingsMouse: {
-      scrollToZoom: false,
+      scrollToZoom: true,
     },
   },
   informationPanel: {
-    open: false,
+    open: true,
     renderAbout: false,
     renderToggle: false,
   },
-  showTitle: false,
+  showTitle: true,
   showIIIFBadge: false,
 };
 
