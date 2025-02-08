@@ -70,7 +70,7 @@
     }
   },
   "theme": {
-    "defaultTheme": "system",
+    "defaultTheme": "dark",
     "toggleEnabled": true
   }
 }
