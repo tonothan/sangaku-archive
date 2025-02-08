@@ -29,7 +29,7 @@ const defaultOptions = {
     },
   },
   informationPanel: {
-    open: true,
+    open: false,
     renderAbout: true,
     renderToggle: true,
   },
