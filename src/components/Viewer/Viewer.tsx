@@ -22,7 +22,7 @@ const customTheme = {
 
 const defaultOptions = {
   canvasBackgroundColor: "var(--gray-3)",
-  canvasHeight: `700px`,
+  canvasHeight: `900px`,
   openSeadragon: {
     gestureSettingsMouse: {
       scrollToZoom: true,
@@ -34,7 +34,7 @@ const defaultOptions = {
     renderToggle: true,
   },
   showTitle: true,
-  showIIIFBadge: false,
+  showIIIFBadge: true,
 };
 
 const Viewer = ({
@@ -56,13 +56,13 @@ const Viewer = ({
 const StyledCloverViewer = styled("div", {
   ".clover-viewer-header": {
     "span.label": {
-      fontSize: "$gr4",
+      fontSize: "$gr3",
     },
     "& button": {
       backgroundColor: "var(--gray-1)",
 
       "> span[data-testid=select-button-value]": {
-        fontSize: "$gr4",
+        fontSize: "$gr3",
       },
     },
   },
