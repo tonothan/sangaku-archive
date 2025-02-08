@@ -77,7 +77,7 @@ export default function CanopyAppProps({
       <NextSeo {...seo} />
       <ThemeProvider
         attribute="class"
-        defaultTheme={theme.defaultTheme ? theme.defaultTheme : "light"}
+        defaultTheme={theme.defaultTheme ? theme.defaultTheme : "dark"}
       >
         {locale && (
           <CanopyProvider
