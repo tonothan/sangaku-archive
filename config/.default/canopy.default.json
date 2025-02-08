@@ -1,6 +1,6 @@
 {
   "collection": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
-  "metadata": ["Year", "Prefecture", "Dedication Site", "Author", "School"],
+  "metadata": ["Year", "Prefecture", "Region", "School"],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
   ],
@@ -11,7 +11,7 @@
       "lang": "en"
     },
     {
-      "config": "locales/jp.json",
+      "config": "locales/ja.json",
       "label": "Japanese",
       "lang": "ja"
     }
@@ -70,7 +70,7 @@
     }
   },
   "theme": {
-    "defaultTheme": "light",
-    "toggleEnabled": false
+    "defaultTheme": "dark",
+    "toggleEnabled": true
   }
 }
