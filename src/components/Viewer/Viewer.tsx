@@ -22,7 +22,7 @@ const customTheme = {
 
 const defaultOptions = {
   canvasBackgroundColor: "var(--gray-3)",
-  canvasHeight: `600px`,
+  canvasHeight: `700px`,
   openSeadragon: {
     gestureSettingsMouse: {
       scrollToZoom: true,
@@ -30,8 +30,8 @@ const defaultOptions = {
   },
   informationPanel: {
     open: true,
-    renderAbout: false,
-    renderToggle: false,
+    renderAbout: true,
+    renderToggle: true,
   },
   showTitle: true,
   showIIIFBadge: false,
