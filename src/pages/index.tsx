@@ -103,7 +103,3 @@ export async function getStaticProps() {
 }
 export default Index;
 
-export default function Home() {
-  return <div>{siteConfig.useHero ? <Hero /> : <Banner />}</div>;
-}
-
