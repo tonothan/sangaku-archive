@@ -35,10 +35,14 @@ const Index: React.FC<IndexProps> = ({
   return (
     <LayoutsBasic frontMatter={frontMatter}>
       <>
-        {frontMatter.showHero && (
+        {frontMatter.showHero ? (
           <HeroWrapper>
             <Hero collection={featuredItems} />
           </HeroWrapper>
+        ) : (
+          <BannerWrapper>
+            <Banner />
+          </BannerWrapper>
         )}
         <Container>
           <Section size="2">
