@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div style={{
       width: "100%",
-      height: "300px",
+      height: "150px",
       backgroundImage: "url('https://tonothan.github.io/mock-banner.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
@@ -10,9 +10,9 @@ const Banner = () => {
       alignItems: "center",
       justifyContent: "center",
       color: "white",
-      fontSize: "2rem"
+      fontSize: "1rem"
     }}>
-      <h1>Welcome to My IIIF Archive</h1>
+      <h1>Sangaku Archive Banner Placeholder</h1>
     </div>
   );
 };
