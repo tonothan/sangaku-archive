@@ -102,4 +102,3 @@ export default function Home() {
   return <div>{siteConfig.useHero ? <Hero /> : <Banner />}</div>;
 }
 
-export default Index;
