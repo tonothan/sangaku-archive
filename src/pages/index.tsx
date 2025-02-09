@@ -15,6 +15,7 @@ import { createCollection } from "../lib/iiif/constructors/collection";
 import { getMarkdownContent } from "@src/lib/contentHelpers";
 import { getRelatedFacetValue } from "../lib/iiif/constructors/related";
 import Banner from "@components/Banner/Banner";
+import { BannerWrapper } from "@components/Header/Header.styled";
 
 interface IndexProps {
   featuredItems: any;
