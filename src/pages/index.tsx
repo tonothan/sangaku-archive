@@ -35,7 +35,15 @@ const Index: React.FC<IndexProps> = ({
   return (
     <LayoutsBasic frontMatter={frontMatter}>
       <>
-        <div>{siteConfig.useHero ? <Hero /> : <Banner />}</div>;
+        {frontMatter.showHero ? (
+          <HeroWrapper>
+            <Hero collection={featuredItems} />
+          </HeroWrapper>
+        ) : (
+          <HeroWrapper>
+            <Banner />
+          </HeroWrapper>
+        )}
         <Container>
           <Section size="2">
             <CanopyMDXRemote source={source} />
