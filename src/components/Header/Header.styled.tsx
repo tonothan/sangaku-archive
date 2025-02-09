@@ -1,5 +1,4 @@
 import { styled } from "@styles/stitches";
-import { styled } from "@stitches/react";
 
 export const BannerWrapper = styled("div", {
   height: "150px",
