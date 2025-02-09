@@ -39,9 +39,9 @@ const Index: React.FC<IndexProps> = ({
             <Hero collection={featuredItems} />
           </HeroWrapper>
         ) : (
-          <HeroWrapper>
+          <BannerWrapper>
             <Banner />
-          </HeroWrapper>
+          </BannerWrapper>
         )}
         <Container>
           <Section size="2">
