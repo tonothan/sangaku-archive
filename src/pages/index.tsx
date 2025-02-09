@@ -35,15 +35,7 @@ const Index: React.FC<IndexProps> = ({
   return (
     <LayoutsBasic frontMatter={frontMatter}>
       <>
-        {frontMatter.showHero ? (
-          <HeroWrapper>
-            <Hero collection={featuredItems} />
-          </HeroWrapper>
-        ) : (
-          <BannerWrapper>
-            <Banner />
-          </BannerWrapper>
-        )}
+        <div>{siteConfig.useHero ? <Hero /> : <Banner />}</div>;
         <Container>
           <Section size="2">
             <CanopyMDXRemote source={source} />
@@ -101,6 +93,7 @@ export async function getStaticProps() {
     },
   };
 }
+export default Index;
 
 export default function Home() {
   return <div>{siteConfig.useHero ? <Hero /> : <Banner />}</div>;
