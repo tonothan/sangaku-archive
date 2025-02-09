@@ -1,4 +1,16 @@
 import { styled } from "@styles/stitches";
+import { styled } from "@stitches/react";
+
+export const BannerWrapper = styled("div", {
+  height: "150px",
+  width: "100%",
+  backgroundColor: "var(--banner-bg, #f5f5f5)", // Default light gray background
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+});
+
 
 const ResponsiveActions = styled("div", {
   flexGrow: "1",
