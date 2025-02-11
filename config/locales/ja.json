@@ -13,7 +13,6 @@
   "searchFilterClear": "すべてクリア",
   "searchFilterClose": "閉じる",
   "searchFilterSubmit": "結果を表示"
-  {
   "Year": "年",
   "Prefecture": "県",
   "Region": "地域",
@@ -30,6 +29,4 @@
     "dark": "ダーク",
     "light": "ライト"
   }
-}
-
 }
