@@ -7,12 +7,9 @@
     "path": "/metadata",
     "text": "Browse by Metadata"
   },
+
   {
-    "path": "/essays",
-    "text": "Solve Problems"
-  },
-  {
-    "path": "/about",
+    "path": "/index",
     "text": "About"
   }
 ]
