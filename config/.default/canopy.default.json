@@ -36,7 +36,7 @@
     "enabled": true,
     "flexSearch": {
       "charset": "latin:extra",
-      "optimize": true,
+      "optimize": false,
       "tokenize": "strict",
       "bidirectional": false,
       "document": {
