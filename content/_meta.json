@@ -7,6 +7,10 @@
     "path": "/metadata",
     "text": "Browse by Metadata"
   },
+   {
+    "path": "/map",
+    "text": "Map"
+  },
   {
     "path": "/index",
     "text": "About"
