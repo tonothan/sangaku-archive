@@ -24,7 +24,7 @@
       "iconSize": [24, 36],
       "iconAnchor": [12, 36]
     },
-    "tileLayers":  "tileLayers": [
+    "tileLayers": [
       {
         "name": "OpenTopoMap",
         "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
