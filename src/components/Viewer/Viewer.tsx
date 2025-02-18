@@ -29,9 +29,10 @@ const defaultOptions = {
     },
   },
   informationPanel: {
-    open: false,
+    open: true,
     renderAbout: true,
     renderToggle: true,
+    renderAnnotations: false,
   },
   showTitle: true,
   showIIIFBadge: true,
