@@ -4,19 +4,7 @@
     "text": "Contemporary Solutions"
   },  
   {
-    "path": "/essays/easy",
-    "text": "Easy problems"
-  },
-  {
-    "path": "/essays/easy/mishima-problem",
-    "text": "Mishima problem"
-  },
-  {
-    "path": "/essays/medium",
-    "text": "Medium problems"
-  },
-  {
-    "path": "/essays/hard",
-    "text": "Hard problems"
+    "path": "/essays",
+    "text": "Commentary"
   }
 ]
