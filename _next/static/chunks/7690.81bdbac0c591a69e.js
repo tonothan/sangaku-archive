@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7690],{7690:function(a){a.exports=JSON.parse('[{"path":"/essays","text":"Contemporary Solutions"},{"path":"/essays/1882_Kanagawa_Mishima-solution","text":"Kanagawa Mishima sangaku (1882) – Problem 3"}]')}}]);
