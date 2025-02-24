@@ -6,14 +6,14 @@
   ],
   "locales": [
     {
-      "config": "locales/en.json",
-      "label": "English",
-      "lang": "en"
-    },
-    {
       "config": "locales/ja.json",
       "label": "Japanese",
       "lang": "ja"
+    },
+    {
+      "config": "locales/en.json",
+      "label": "English",
+      "lang": "en"
     }
   ],
   "map": {
