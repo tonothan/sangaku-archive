@@ -14,20 +14,4 @@
   "searchFilterClose": "閉じる",
   "searchFilterSubmit": "結果を表示",
   "TranscriptionsTranslations": "書写と翻訳"
-  "Year": "年",
-  "Prefecture": "県",
-  "Region": "地域",
-  "School": "流",
-  "search": {
-    "placeholder": "検索...",
-    "button": "検索"
-  },
-  "metadata": {
-    "label": "メタデータ",
-    "value": "値"
-  },
-  "theme": {
-    "dark": "ダーク",
-    "light": "ライト"
-  }
 }
