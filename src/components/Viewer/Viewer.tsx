@@ -29,12 +29,12 @@ const defaultOptions = {
     },
   },
   informationPanel: {
-    open: true,
+    open: false,
     renderAbout: true,
     renderToggle: true,
     renderAnnotations: false,
   },
-  showTitle: true,
+  showTitle: false,
   showIIIFBadge: true,
 };
 
