@@ -40,7 +40,7 @@
   "search": {
     "enabled": true,
     "flexSearch": {
-      "charset": ["latin:extra", "japanese"],
+      "charset": ["latin:extra"],
       "optimize": false,
       "tokenize": "full",
       "bidirectional": true,
