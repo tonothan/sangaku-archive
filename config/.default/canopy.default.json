@@ -67,15 +67,16 @@
     "index": {
       "metadata": {
         "enabled": true,
-        "all": false
+        "all": true
       },
       "summary": {
-        "enabled": false
+        "enabled": true
       }
     }
   },
   "theme": {
     "defaultTheme": "light",
-    "toggleEnabled": true
+    "toggleEnabled": true,
+    "background": "#c2d4ed"
   }
 }
