@@ -40,10 +40,10 @@
   "search": {
     "enabled": true,
     "flexSearch": {
-      "charset": "latin:extra",
+      "charset": ["latin:extra", "japanese"],
       "optimize": false,
-      "tokenize": "strict",
-      "bidirectional": false,
+      "tokenize": "full",
+      "bidirectional": true,
       "document": {
         "index": [
           {
@@ -75,7 +75,7 @@
     }
   },
   "theme": {
-    "defaultTheme": "dark",
+    "defaultTheme": "light",
     "toggleEnabled": true
   }
 }
