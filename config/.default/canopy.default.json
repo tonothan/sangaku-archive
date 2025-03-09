@@ -67,7 +67,7 @@
     "index": {
       "metadata": {
         "enabled": true,
-        "all": true
+        "all": false
       },
       "summary": {
         "enabled": false
