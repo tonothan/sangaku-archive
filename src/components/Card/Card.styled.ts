@@ -21,7 +21,6 @@ const Wrapper = styled("div", {
   flexShrink: 0,
   maxWidth: "275px",
   height: "auto",
-  height: "250px",
   padding: "8px",
 
   img: {
