@@ -15,11 +15,10 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   display: "flex",
-  width: "100%",
+  width: "275px",
   position: "relative",
-  flexGrow: 1,
+  flexGrow: 0,
   flexShrink: 0,
-  maxWidth: "275px",
   height: "auto",
   padding: "8px",
 
