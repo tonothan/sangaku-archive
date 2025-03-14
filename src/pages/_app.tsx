@@ -35,8 +35,8 @@ export default function CanopyAppProps({
 
   const radixTheme = {
     accentColor: theme.accentColor,
-    grayColor: theme.grayColor,
-    panelBackground: theme.panelBackground,
+    grayColor: "#444445",
+    panelBackground: "#bbc3ed",
     radius: theme.radius,
     scaling: theme.scaling,
   };
