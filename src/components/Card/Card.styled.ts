@@ -18,7 +18,7 @@ const Wrapper = styled("div", {
   width: "200px",
   position: "relative",
   flexGrow: 0,
-  flexShrink: 0,
+  flexShrink: 1,
   height: "auto",
   padding: "8px",
 
