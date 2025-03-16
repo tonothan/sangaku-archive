@@ -7,6 +7,8 @@ const defaults = {
   body: {
     margin: 0,
     padding: 0,
+    backgroundColor: "$panelBackground", 
+    color: "$text", 
   },
 
   html: {
@@ -17,6 +19,7 @@ const defaults = {
     webKitFontSmothing: "antialiased",
     mozOsxFontSmoth: "grayscale",
     paddingTop: `${headerHeight}px`,
+    backgroundColor: "$panelBackground",
   },
 
   "ul, ol": {
