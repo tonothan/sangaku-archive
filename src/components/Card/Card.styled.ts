@@ -20,7 +20,7 @@ const Wrapper = styled("div", {
   flexGrow: 0,
   flexShrink: 0,
   height: "auto",
-  padding: "0",
+  padding: "8px",
 
   img: {
     width: "100%",
