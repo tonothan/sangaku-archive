@@ -15,7 +15,7 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   display: "flex",
-  width: "fit-content",
+  width: "275px",
   position: "relative",
   flexGrow: 0,
   flexShrink: 0,
@@ -23,8 +23,8 @@ const Wrapper = styled("div", {
   padding: "1px",
 
   img: {
-    width: "275px",
-    height: "fit-content",
+    width: "100%",
+    height: "auto",
     objectFit: "contain",
   },
 
