@@ -20,11 +20,11 @@ const Wrapper = styled("div", {
   flexGrow: 0,
   flexShrink: 0,
   height: "fit-content",
-  padding: "8px",
+  padding: "1px",
 
   img: {
     width: "275",
-    height: "fit-content",
+    height: "auto",
     objectFit: "contain",
   },
 
