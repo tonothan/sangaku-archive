@@ -19,19 +19,19 @@ const Wrapper = styled("div", {
   position: "relative",
   flexGrow: 0,
   flexShrink: 0,
-  height: "fit-content",
-  padding: "8px",
+  height: "auto",
+  padding: "0",
 
   img: {
     width: "100%",
-    height: "auto",
-    objectFit: "contain",
+    height: "100%",
+    objectFit: "cover",
   },
 
   a: {
     display: "flex",
     flexDirection: "column",
-    width: "fit-content",
+    width: "100%",
     color: "var(--gray-12)",
     textDecoration: "none !important",
     transition: "$canopyAll",
