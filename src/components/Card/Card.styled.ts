@@ -23,8 +23,8 @@ const Wrapper = styled("div", {
   padding: "1px",
 
   img: {
-    width: "275",
-    height: "auto",
+    width: "275px",
+    height: "fit-content",
     objectFit: "contain",
   },
 
