@@ -20,7 +20,7 @@ const Wrapper = styled("div", {
   flexGrow: 0,
   flexShrink: 0,
   height: "fit-content",
-  padding: "1px",
+  padding: "8px",
 
   img: {
     width: "100%",
@@ -31,7 +31,7 @@ const Wrapper = styled("div", {
   a: {
     display: "flex",
     flexDirection: "column",
-    width: "100%",
+    width: "fit-content",
     color: "var(--gray-12)",
     textDecoration: "none !important",
     transition: "$canopyAll",
