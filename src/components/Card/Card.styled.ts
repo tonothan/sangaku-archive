@@ -15,7 +15,7 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   display: "flex",
-  width: "275px",
+  width: "200px",
   position: "relative",
   flexGrow: 0,
   flexShrink: 0,
