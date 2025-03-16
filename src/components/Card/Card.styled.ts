@@ -23,9 +23,9 @@ const Wrapper = styled("div", {
   padding: "8px",
 
   img: {
-    width: "100%",
-    height: "auto",
-    objectFit: "cover",
+    width: "275",
+    height: "fit-content",
+    objectFit: "contain",
   },
 
   a: {
