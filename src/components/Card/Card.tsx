@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
   const alt = getLabel(label);
 
   return (
-    <Wrapper as={Box} ref={ref} style={{ height: "fit-content" }}>
+    <Wrapper as={Box} ref={ref} style={{ height: "auto" }}>
       <RadixThemesCard
         size="2"
         style={{ width: "100%" }}
@@ -43,13 +43,13 @@ const Card: React.FC<CardProps> = ({ resource }) => {
             data-testid="canopy-card-inset"
             data-resource={thumbnail[0].id}
           >
-            <AspectRatio.Root ratio={aspectRatio} style={{ height: "auto", width: "100%" }}>
+            <AspectRatio.Root ratio={aspectRatio} >
               <Placeholder style={{ height: "auto", padding: 0 }}>
                 <MotionConfig transition={{ duration: 1 }}>
                   {inView && resource && (
                     <LazyMotion features={domAnimation}>
                       <m.div
-                        style={{ height: "auto", width: "100%" }}
+                        style={{ height: "100%" }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                       >
