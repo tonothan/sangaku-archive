@@ -21,21 +21,25 @@ const Card: React.FC<CardProps> = ({ resource }) => {
 
   const { label, homepage, thumbnail } = resource;
   // @ts-ignore
-  const { width, height } = thumbnail[0];
+  const { width, height } = thumbnail?.[0] || {};
 
   if (width && height) aspectRatio = width / height;
 
   const { ref, inView } = useInView();
   const alt = getLabel(label);
 
+  const cardWidth = 250; 
+  const cardHeight = cardWidth / aspectRatio; 
+
   return (
     <Wrapper as={Box} 
       ref={ref} 
       style={{
-        height: "300px",
-        width: "250px", 
-        padding: "8px", 
-      }}>
+        width: `${cardWidth}px`,
+        height: `${cardHeight}px`, 
+        padding: "8px",
+      }}
+      >
       <RadixThemesCard
         size="2"
         style={{ 
