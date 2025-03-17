@@ -41,7 +41,8 @@ const defaults = {
 };
 
 const globalStyles = globalCss({
-  ...defaults,
+  ":root": {
+    "--color-background": "#edf6f8",
 });
 
 export default globalStyles;
