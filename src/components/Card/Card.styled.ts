@@ -18,8 +18,8 @@ const Wrapper = styled("div", {
   width: "200px",
   position: "relative",
   flexGrow: 0,
-  flexShrink: 1,
-  height: "200px",
+  flexShrink: 0,
+  height: "300px",
   padding: "8px",
 
   img: {
