@@ -15,11 +15,11 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   display: "flex",
-  width: "200px",
-  position: "relative",
+  width: "250px",
+  position: "flex",
   flexGrow: 0,
   flexShrink: 0,
-  height: "300px",
+  height: "auto",
   padding: "8px",
 
   img: {
