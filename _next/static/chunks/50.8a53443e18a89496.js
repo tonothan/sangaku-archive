@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[50],{4050:function(t){t.exports=JSON.parse('[{"path":"/about","text":"算額アーカイブについて"},{"path":"/about/about_en","text":"About the Sangaku Archive"}]')}}]);

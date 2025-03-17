@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[839],{7690:function(s){s.exports=JSON.parse('[{"path":"/essays","text":"Contemporary Solutions"},{"path":"/essays/mishima-sangaku","text":"神奈川　三島神社算額第四問"}]')}}]);
