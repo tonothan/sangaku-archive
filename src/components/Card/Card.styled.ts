@@ -15,7 +15,6 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   width: "250px",
-  position: "flex",
   flexDirection: "column", 
   height: "auto",
   padding: "8px",
@@ -27,7 +26,6 @@ const Wrapper = styled("div", {
   img: {
     width: "100%",
     height: "auto",
-    maxHeight: "100%",
     objectFit: "contain",
   },
 
