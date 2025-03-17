@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
   const alt = getLabel(label);
 
   return (
-    <Wrapper as={Box} ref={ref} style={{ height: "auto" }}>
+    <Wrapper as={Box} ref={ref} style={{ height: "fit-content" }}>
       <RadixThemesCard
         size="2"
         style={{ width: "100%" }}
