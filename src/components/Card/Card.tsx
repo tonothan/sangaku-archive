@@ -44,16 +44,16 @@ const Card: React.FC<CardProps> = ({ resource }) => {
             data-resource={thumbnail[0].id}
           >
             <AspectRatio.Root ratio={aspectRatio} style={{ height: "auto", width: "100%" }}>
-              <Placeholder style={{ height: "fit-content" }}>
+              <Placeholder style={{ height: "auto", padding: 0 }}>
                 <MotionConfig transition={{ duration: 1 }}>
                   {inView && resource && (
                     <LazyMotion features={domAnimation}>
                       <m.div
-                        style={{ height: "100%" }}
+                        style={{ height: "auto", width: "100%" }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                       >
-                        <Figure resource={thumbnail} alt={alt} />
+                        <Figure resource={thumbnail} alt={alt} style={{ width: "100%", height: "auto", objectFit: "contain" }}/>
                       </m.div>
                     </LazyMotion>
                   )}
