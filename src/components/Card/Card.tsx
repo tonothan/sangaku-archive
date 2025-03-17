@@ -38,6 +38,10 @@ const Card: React.FC<CardProps> = ({ resource }) => {
         width: `${cardWidth}px`,
         height: `${cardHeight}px`, 
         padding: "8px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        overflow: "hidden",
       }}
       >
       <RadixThemesCard
