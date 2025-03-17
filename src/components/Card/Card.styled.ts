@@ -14,13 +14,15 @@ const Placeholder = styled("div", {
 });
 
 const Wrapper = styled("div", {
-  display: "flex",
   width: "250px",
   position: "flex",
-  flexGrow: 0,
-  flexShrink: 0,
+  flexDirection: "column", 
   height: "auto",
   padding: "8px",
+  justifyContent: "center",
+  alignItems: "center",
+  overflow: "hidden",
+  position: "relative",
 
   img: {
     width: "100%",
