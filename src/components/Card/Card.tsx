@@ -29,10 +29,20 @@ const Card: React.FC<CardProps> = ({ resource }) => {
   const alt = getLabel(label);
 
   return (
-    <Wrapper as={Box} ref={ref} style={{ height: "fit-content" }}>
+    <Wrapper as={Box} 
+      ref={ref} 
+      style={{
+        height: "auto", 
+        padding: "8px", 
+        backgroundColor: "var(--gray-3)", 
+      }}>
       <RadixThemesCard
         size="2"
-        style={{ width: "100%" }}
+        style={{ 
+          width: "100%", 
+          display: "flex",
+          flexDirection: "column",
+        }}
         variant="classic"
         asChild
       >
@@ -53,7 +63,12 @@ const Card: React.FC<CardProps> = ({ resource }) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                       >
-                        <Figure resource={thumbnail} alt={alt} style={{ width: "100%", height: "auto", objectFit: "contain" }}/>
+                        <Figure 
+                          resource={thumbnail} 
+                          alt={alt} 
+                          style={{ 
+                            width: "100%", height: "auto", objectFit: "contain" 
+                          }}/>
                       </m.div>
                     </LazyMotion>
                   )}
