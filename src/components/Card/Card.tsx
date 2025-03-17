@@ -48,6 +48,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
         size="2"
         style={{ 
           width: "100%", 
+          height: `${cardHeight}px`,
         }}
         variant="classic"
         asChild
