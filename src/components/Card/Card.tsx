@@ -32,7 +32,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
     <Wrapper as={Box} 
       ref={ref} 
       style={{
-        height: "auto",
+        height: "300px",
         width: "250px", 
         flexGrow: 0,
         flexShrink: 1,
