@@ -32,7 +32,8 @@ const Card: React.FC<CardProps> = ({ resource }) => {
     <Wrapper as={Box} 
       ref={ref} 
       style={{
-        height: "auto", 
+        height: "200px",
+        width: "250px", 
         padding: "8px", 
       }}>
       <RadixThemesCard
