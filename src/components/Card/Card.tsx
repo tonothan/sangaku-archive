@@ -34,7 +34,6 @@ const Card: React.FC<CardProps> = ({ resource }) => {
       style={{
         height: "auto", 
         padding: "8px", 
-        backgroundColor: "var(--gray-3)", 
       }}>
       <RadixThemesCard
         size="2"
