@@ -17,7 +17,7 @@ export const { styled, css, keyframes, createTheme } = createStitches({
 
 export const darkTheme = createTheme({
   colors: {
-    background: "#252d5c",
-    text: "#8d8f96",
+    background: "#EDF6F8",
+    text: "#7A7A7A",
   },
 });
