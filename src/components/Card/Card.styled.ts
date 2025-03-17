@@ -7,7 +7,7 @@ const Content = styled("div", {
 const Placeholder = styled("div", {
   backgroundColor: "var(--gray-3)",
   width: "100%",
-  height: "auto",
+  height: "100%",
   overflowY: "hidden",
   borderRadius: "3px",
   transition: "$canopyAll",
