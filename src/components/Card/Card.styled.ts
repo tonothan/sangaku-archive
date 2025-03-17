@@ -15,8 +15,8 @@ const Placeholder = styled("div", {
 
 const Wrapper = styled("div", {
   width: "250px",
+  display: "flex",
   flexDirection: "column", 
-  height: "auto",
   padding: "8px",
   justifyContent: "center",
   alignItems: "center",
