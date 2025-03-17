@@ -34,16 +34,12 @@ const Card: React.FC<CardProps> = ({ resource }) => {
       style={{
         height: "300px",
         width: "250px", 
-        flexGrow: 0,
-        flexShrink: 0,
         padding: "8px", 
       }}>
       <RadixThemesCard
         size="2"
         style={{ 
           width: "100%", 
-          display: "flex",
-          flexDirection: "column",
         }}
         variant="classic"
         asChild
@@ -56,7 +52,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
             data-resource={thumbnail[0].id}
           >
             <AspectRatio.Root ratio={aspectRatio} >
-              <Placeholder style={{ height: "auto", padding: 0 }}>
+              <Placeholder>
                 <MotionConfig transition={{ duration: 1 }}>
                   {inView && resource && (
                     <LazyMotion features={domAnimation}>
