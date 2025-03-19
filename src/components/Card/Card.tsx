@@ -17,7 +17,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ resource }) => {
-  let aspectRatio = 1;
+  let aspectRatio = 2/1;
 
   const { label, homepage, thumbnail } = resource;
   // @ts-ignore
