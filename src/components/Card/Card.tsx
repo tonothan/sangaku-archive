@@ -17,7 +17,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ resource }) => {
-  let aspectRatio = 2/1;
+  let aspectRatio = 7/5;
 
   const { label, homepage, thumbnail } = resource;
   // @ts-ignore
@@ -39,8 +39,6 @@ const Card: React.FC<CardProps> = ({ resource }) => {
         height: `${cardHeight}px`, 
         padding: "8px",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         overflow: "hidden",
       }}
       >
@@ -48,7 +46,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
         size="2"
         style={{ 
           width: "100%", 
-          height: "100%",
+          height: "auto",
         }}
         variant="classic"
         asChild
