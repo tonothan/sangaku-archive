@@ -1,18 +1,18 @@
 [
   {
     "path": "/works",
-    "text": "Browse all"
+    "text": "イメージ / Images"
   },
   {
     "path": "/metadata",
-    "text": "Browse by Metadata"
+    "text": " メタデータ / Metadata"
   },
    {
     "path": "/map",
-    "text": "Map"
+    "text": "地図 / Map"
   },
   {
     "path": "/about",
-    "text": "About"
+    "text": "算額アーカイブについて / About"
   }
 ]
