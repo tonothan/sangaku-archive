@@ -21,31 +21,20 @@ const Card: React.FC<CardProps> = ({ resource }) => {
 
   const { label, homepage, thumbnail } = resource;
   // @ts-ignore
-  const { width, height } = thumbnail?.[0] || {};
+  const { width, height } = thumbnail[0];
 
   if (width && height) aspectRatio = width / height;
 
   const { ref, inView } = useInView();
   const alt = getLabel(label);
 
-  const cardWidth = 250; 
-  const cardHeight = cardWidth / aspectRatio; 
-
   return (
     <Wrapper as={Box} 
-      ref={ref} 
-      style={{
-        width: `${cardWidth}px`,
-        height: `${cardHeight}px`, 
-        padding: "4px",
-        overflow: "hidden",
-      }}
-      >
+      ref={ref} >
       <RadixThemesCard
         size="2"
         style={{ 
           width: "100%", 
-          height: "auto",
         }}
         variant="classic"
         asChild
@@ -70,9 +59,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
                         <Figure 
                           resource={thumbnail} 
                           alt={alt} 
-                          style={{ 
-                            width: "100%", height: "auto", objectFit: "contain" 
-                          }}/>
+                          />
                       </m.div>
                     </LazyMotion>
                   )}
