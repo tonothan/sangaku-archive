@@ -16,10 +16,7 @@ const Placeholder = styled("div", {
 const Wrapper = styled("div", {
   width: "250px",
   display: "flex",
-  flexDirection: "column", 
   padding: "8px",
-  justifyContent: "center",
-  alignItems: "center",
   overflow: "hidden",
   position: "relative",
 
@@ -31,7 +28,6 @@ const Wrapper = styled("div", {
 
   a: {
     display: "flex",
-    flexDirection: "column",
     width: "100%",
     color: "var(--gray-12)",
     textDecoration: "none !important",
