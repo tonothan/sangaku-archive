@@ -37,7 +37,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
       style={{
         width: `${cardWidth}px`,
         height: `${cardHeight}px`, 
-        padding: "8px",
+        padding: "4px",
         overflow: "hidden",
       }}
       >
