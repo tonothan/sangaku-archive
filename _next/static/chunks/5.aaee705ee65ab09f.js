@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5],{7005:function(t){t.exports=JSON.parse('[{"path":"/works","text":"イメージ / Images"},{"path":"/metadata","text":" メタデータ / Metadata"},{"path":"/map","text":"地図 / Map"},{"path":"/about","text":"算額アーカイブについて / About"}]')}}]);
