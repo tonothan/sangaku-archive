@@ -17,11 +17,10 @@ export const GoogleFontImport = () => (
 );
 
 const sans = `var(--canopy-sans-font)`;
-const display = `var(--canopy-display-font)`;
+
 
 const fonts = {
   sans,
-  display,
 };
 
 export default fonts;
