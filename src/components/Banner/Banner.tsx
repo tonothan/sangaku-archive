@@ -7,7 +7,7 @@ const Banner = () => {
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center top",
-      height: "400px"
+      height: "300px"
     }}>
     </div>
   );
