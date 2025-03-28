@@ -9,6 +9,7 @@ const Banner = () => {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center top",
       height: "auto"
+      marginTop: "80px"
     }}>
     </div>
   );
