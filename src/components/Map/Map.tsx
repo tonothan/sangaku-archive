@@ -18,7 +18,6 @@ import { InternationalString } from "@iiif/presentation-3";
 import Leaflet from "leaflet";
 import Link from "@components/Shared/Link";
 import { MapStyled } from "@components/Map/Map.styled";
-import MarkerClusterGroup from "@components/Map/MarkerClusterGroup";
 import { getBounds } from "@lib/iiif/navPlace";
 import { getLabel } from "@hooks/getLabel";
 
