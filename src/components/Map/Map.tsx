@@ -113,7 +113,6 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
               ))
             )}
           </FeatureGroup>
-        </MarkerClusterGroup>
       </MapContainer>
     </MapStyled>
   );
