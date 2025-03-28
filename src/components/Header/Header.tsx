@@ -45,11 +45,6 @@ const Header = () => {
              <span style={{ fontFamily: "var(--canopy-display-font)", color: "var(--gray-12)" }}>
             算額アーカイブ
             </span>
-            <img 
-            src="https://tonothan.github.io/mock-logo-withscript.jpg" 
-            alt="Site Logo" 
-            style={{ height: "2em", width: "auto", marginRight: "10px" }}
-            />
           </Heading>
         </Link>
         <ResponsiveActions>
