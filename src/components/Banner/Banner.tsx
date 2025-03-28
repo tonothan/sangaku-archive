@@ -1,19 +1,18 @@
+
 const Banner = () => {
   return (
     <div style={{
       width: "100%",
+      minHeight: "40vh",
       backgroundImage: "url('https://tonothan.github.io/sangaku_banner_prelim.jpg')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      color: "white",
-      fontSize: "1rem"
+      backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center top",
+      height: "auto"
     }}>
-      <h1></h1>
     </div>
   );
 };
 
 export default Banner;
+
