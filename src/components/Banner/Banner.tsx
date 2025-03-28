@@ -8,7 +8,7 @@ const Banner = () => {
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center top",
-      height: "auto"
+      height: "auto",
       marginTop: "80px"
     }}>
     </div>
