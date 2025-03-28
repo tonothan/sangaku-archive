@@ -2,8 +2,8 @@ const Banner = () => {
   return (
     <div style={{
       width: "100%",
-      height: "150px",
-      backgroundImage: "url('https://tonothan.github.io/mock-banner.jpg')",
+      height: "400px",
+      backgroundImage: "url('tonothan.github.io/sangaku_banner_prelim.jpg')",
       backgroundSize: "cover",
       backgroundPosition: "center",
       display: "flex",
