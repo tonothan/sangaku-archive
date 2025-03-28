@@ -1,13 +1,14 @@
 import { styled } from "@styles/stitches";
 
 export const BannerWrapper = styled("div", {
-  height: "150px",
+  height: "400px",
   width: "100%",
   backgroundColor: "var(--banner-bg, #f5f5f5)", // Default light gray background
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   textAlign: "center",
+  marginTop: "150px"
 });
 
 
