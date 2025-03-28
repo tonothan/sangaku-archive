@@ -1,6 +1,6 @@
 {
-  "collection": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
-  "metadata": ["Year", "Prefecture", "Region", "School"],
+  "collection": "https://tonothan.github.io/sangaku-archive_preview-collection.json",
+  "metadata": ["Year", "Prefecture", "Author", "School", "Type"],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
   ],
