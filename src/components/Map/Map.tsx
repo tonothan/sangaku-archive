@@ -59,7 +59,7 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
       <MapContainer
         className={"map-container"}
         bounds={bounds}
-        scrollWheelZoom={false}
+        scrollWheelZoom={true}
         ref={mapRef}
       >
         <LayersControl position="topright">
@@ -78,7 +78,6 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
             );
           })}
         </LayersControl>
-        <MarkerClusterGroup>
           <FeatureGroup>
             {manifests.map((item: any) =>
               item.features.map((feature: any, index: any) => (
