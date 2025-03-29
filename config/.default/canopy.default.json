@@ -76,7 +76,7 @@
   },
   "theme": {
     "defaultTheme": "light",
-    "toggleEnabled": true,
+    "toggleEnabled": false,
     "background": "#c2d4ed"
   }
 }
