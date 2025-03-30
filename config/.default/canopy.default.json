@@ -1,5 +1,5 @@
 {
-  "collection": "https://tonothan.github.io/sangaku-archive_preview-collection.json",
+  "collection": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
   "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site"],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
