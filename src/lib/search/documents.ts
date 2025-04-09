@@ -7,7 +7,7 @@ const getDocuments = (q: string, flexSearch: any) => {
   const index = new FlexSearch.Document(flexSearch);
   INDEX.forEach((doc) => index.add(doc));
 
-  const results = index.search(q).reduce((acc, curr) => {
+  const results = index.search(q, { field: ["label", "metadata", "summary"] }).reduce((acc, curr) => {
     return [...new Set([...acc, ...curr.result])];
   }, []);
 
