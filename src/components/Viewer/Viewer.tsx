@@ -33,7 +33,6 @@ const defaultOptions = {
     allowOpen: true,
     renderAbout: true,
     renderToggle: true,
-    renderAnnotations: true,
     autoOpen: false,
   },
   showTitle: false,
