@@ -30,9 +30,10 @@ const defaultOptions = {
   },
   informationPanel: {
     open: false,
+    allowOpen: true,
     renderAbout: true,
     renderToggle: true,
-    renderAnnotations: false,
+    renderAnnotations: true,
   },
   showTitle: false,
   showIIIFBadge: true,
