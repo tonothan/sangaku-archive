@@ -34,6 +34,7 @@ const defaultOptions = {
     renderAbout: true,
     renderToggle: true,
     renderAnnotations: true,
+    autoOpen: false,
   },
   showTitle: false,
   showIIIFBadge: true,
