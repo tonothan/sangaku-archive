@@ -41,13 +41,13 @@
     "enabled": true,
     "flexSearch": {
       "charset": ["latin:extra", "japanese"],
-      "optimize": false,
+      "optimize": true,
       "tokenize": "strict",
       "bidirectional": true,
       "document": {
         "index": [
           {
-            "field": "metadata",
+            "field": "label",
             "tokenize": "full",
             "resolution": 9,
             "depth": 3,
