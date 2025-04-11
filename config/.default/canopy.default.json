@@ -47,7 +47,7 @@
       "document": {
         "index": [
           {
-            "field": "label",
+            "field": "metadata",
             "tokenize": "full",
             "resolution": 9,
             "depth": 3,
