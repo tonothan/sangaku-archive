@@ -1,0 +1,81 @@
+{
+  "collection": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
+  "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site", "奉納者・ Author", "流・ School"],
+  "featured": [
+    "https://tonothan.github.io/canopy_samplemanifest-2.json"
+  ],
+  "locales": [
+    {
+      "config": "locales/ja.json",
+      "label": "Japanese",
+      "lang": "ja"
+    },
+    {
+      "config": "locales/en.json",
+      "label": "English",
+      "lang": "en"
+    }
+  ],
+  "map": {
+    "defaultBounds": [[51.505, -0.09]],
+    "enabled": true,
+    "icon": {
+      "iconUrl": "images/marker-icon.png",
+      "iconSize": [24, 36],
+      "iconAnchor": [12, 36]
+    },
+    "tileLayers": [
+      {
+        "name": "OpenStreetMap",
+        "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+      },
+          {
+        "name": "OpenTopoMap",
+        "url": "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+        "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
+      }
+    ]
+  },
+  "search": {
+    "enabled": true,
+    "flexSearch": {
+      "charset": ["latin:extra", "japanese"],
+      "optimize": true,
+      "tokenize": "strict",
+      "bidirectional": true,
+      "document": {
+        "index": [
+          {
+            "field": "label",
+            "tokenize": "full",
+            "resolution": 9,
+            "depth": 3,
+            "bidirectional": true
+          },
+          {
+            "field": "metadata",
+            "resolution": 2
+          },
+          {
+            "field": "summary",
+            "resolution": 1
+          }
+        ]
+      }
+    },
+    "index": {
+      "metadata": {
+        "enabled": true,
+        "all": true
+      },
+      "summary": {
+        "enabled": false
+      }
+    }
+  },
+  "theme": {
+    "defaultTheme": "light",
+    "toggleEnabled": false,
+  }
+}
