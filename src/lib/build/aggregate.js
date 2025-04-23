@@ -1,6 +1,5 @@
 const { getCanopyCollection } = require("./shape");
 const { getEntries } = require("../iiif/label");
-const { getUniqueSlug } = require("./slug");
 const { log } = require("./log");
 const { getRootCollection, getBulkManifests } = require("./request");
 const { buildIndexData } = require("./search");
@@ -97,9 +96,7 @@ function getSlugFromManifestId(manifestId) {
       const { index } = manifestListed;
 
       // Create a unique slug for the Manifest.
-      const string = getSlugFromManifestId(manifest.id);
-      const { slug, allSlugs } = getUniqueSlug(string, rootSlugs);
-      rootSlugs = allSlugs;
+      const slug = getSlugFromManifestId(manifest.id);
 
       // Return the Manifest with an index, slug, and prescribed thumbnail.
       return {
