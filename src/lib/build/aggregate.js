@@ -38,6 +38,30 @@ module.exports.build = async (env) => {
     JSON.stringify([canopyCollection])
   );
 
+/**
+ * Extracts a slug from a IIIF manifest ID URL, based on the filename.
+ * Removes the `.json` extension and handles trailing slashes.
+ * 
+ * Example:
+ *   https://example.org/iiif/manifest-001.json → manifest-001
+ *   https://example.org/iiif/folder/manifest-002.json → manifest-002
+ * 
+ * This was generated with assistance from ChatGPT to allow Canopy to generate
+ * slugs based on manifest filenames rather than labels.
+ */
+function getSlugFromManifestId(manifestId) {
+  try {
+    const url = new URL(manifestId);
+    const parts = url.pathname.split('/');
+    // Handles cases where there's a trailing slash at the end
+    const filename = parts.pop() || parts.pop();
+    // Remove .json extension if present
+    return filename.replace(/\.json$/i, '');
+  } catch (e) {
+    // Return fallback slug if ID isn't a valid URL
+    return 'unknown';
+  }
+} 
   /**
    * Filter items to only include Manifests, add index, and
    * then retrieve all in bulk in chunks of set amount (10).
@@ -73,7 +97,7 @@ module.exports.build = async (env) => {
       const { index } = manifestListed;
 
       // Create a unique slug for the Manifest.
-      const string = getLabel(manifest.label)[0];
+      const string = getSlugFromManifestId(manifest.id);
       const { slug, allSlugs } = getUniqueSlug(string, rootSlugs);
       rootSlugs = allSlugs;
 
