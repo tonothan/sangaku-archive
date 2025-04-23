@@ -83,7 +83,6 @@ function getSlugFromManifestId(manifestId) {
   /**
    * Prepare Manifests for Canopy and write to file.
    */
-  let rootSlugs = {};
   const canopyManifests = manifests
     .map((manifest) => {
       // Get the earlier defined index of the Manifest in the collection.
