@@ -1,5 +1,5 @@
 const { getCanopyCollection } = require("./shape");
-const { getEntries, getLabel } = require("../iiif/label");
+const { getEntries } = require("../iiif/label");
 const { getUniqueSlug } = require("./slug");
 const { log } = require("./log");
 const { getRootCollection, getBulkManifests } = require("./request");
