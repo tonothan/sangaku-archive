@@ -1,6 +1,6 @@
 {
   "collection": "http://preview.sangaku-archive.org/sangaku-archive-samplecollection.json",
-  "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site", "奉納者・ Author", "流・ School", "種類・ Type"],
+  "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site", "奉納者・ Dedicator", "流・ School", "種類・ Type"],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
   ],
