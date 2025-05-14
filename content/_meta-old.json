@@ -14,5 +14,9 @@
   {
     "path": "/about",
     "text": "About"
+  },
+    {
+    "path": "/about",
+    "text": "プロジェクト概要・About"
   }
 ]
