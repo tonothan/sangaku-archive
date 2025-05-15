@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tonothan.github.io/sangaku-archive
+Host: https://preview.sangaku-archive.org
 
 # Sitemaps
-Sitemap: https://tonothan.github.io/sangaku-archive/sitemap.xml
+Sitemap: https://preview.sangaku-archive.org/sitemap.xml
