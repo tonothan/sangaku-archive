@@ -3,7 +3,7 @@ const Banner = () => {
   return (
     <div style={{
       width: "100%",
-      backgroundImage: "url('https://tonothan.github.io/sangaku_banner_prelim.jpg')",
+      backgroundImage: "url('/images/sangaku_banner.jpg')",
       backgroundSize: "contain",
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center top",
