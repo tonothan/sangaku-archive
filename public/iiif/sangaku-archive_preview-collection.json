@@ -46,10 +46,6 @@
 "type": "Manifest"
 },
 {
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1882_Yamagata_Daisho_463.json",
-"type": "Manifest"
-},
-{
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1913_Yamagata_Hakusanji_470.json",
 "type": "Manifest"
 },
@@ -94,10 +90,6 @@
 "type": "Manifest"
 },
 {
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1880_Miyagi_Kashima_1081.json",
-"type": "Manifest"
-},
-{
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1880_Miyagi_Suwa_1082.json",
 "type": "Manifest"
 },
@@ -111,10 +103,6 @@
 },
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1912_Miyagi_Shiogama_1096.json",
-"type": "Manifest"
-},
-{
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1926_Miyagi_Kashima_1107.json",
 "type": "Manifest"
 },
 {
@@ -202,7 +190,7 @@
 "type": "Manifest"
 },
 {
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1900_Fukushima_Fudō-in_1241.json",
+"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1900_Fukushima_Fudo-in_1241.json",
 "type": "Manifest"
 },
 {
@@ -635,10 +623,6 @@
     },
     {
     "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1846_Gunma_Urushibara_556.json",
-    "type": "Manifest"
-    },
-    {
-    "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1851_Gunma_Togashira_564.json",
     "type": "Manifest"
     },
     {
@@ -1734,7 +1718,7 @@
         "type": "Manifest"
         },
         {
-        "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1894_Niigata_Fukōji_698.json",
+        "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1894_Niigata_Fukoji_698.json",
         "type": "Manifest"
         },
         {
@@ -2018,10 +2002,6 @@
                 "type": "Manifest"
                 },
                 {
-                "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1796_Okayama_Achi_622.json",
-                "type": "Manifest"
-                },
-                {
                 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1838_Okayama_omoto_626.json",
                 "type": "Manifest"
                 },
@@ -2059,10 +2039,6 @@
                 },
                 {
                 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/Unknown_Okayama_Koshima_650.json",
-                "type": "Manifest"
-                },
-                {
-                "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1830_Okayama_Achi_625.json",
                 "type": "Manifest"
                 },
                 {
