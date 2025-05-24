@@ -1,9 +1,102 @@
 ---
-title: Problems
-description: Here go the problem solutions
+title: Intro
+description: Wasan is different
 navigation: "essays"
 ---
+# What makes the mathematics of _sangaku_ problems special?
 
-# Contemporary Sangaku Solutions
+_Sangaku_ problems---typically, but not always, geometric in nature---are products of the broader practice of traditional Japanese mathematics, also known today as _wasan_, which experienced peak activity during the Edo period (1603-1868). The mathematical writing on _sangaku_ tablets is often terse; for each problem, a statement is given, as well as the answer and a technique (a formula, of sorts) the author used to arrive at the answer. However, the tablets typically lack anything resembling a completely worked-out solution. Thus, much of our knowledge of _wasan_ comes from Edo-period books and manuscripts in which mathematicians wrote more expansively about their problem-solving processes. This does not diminish the value of _sangaku_ tablets as a kind of social medium, both an outcome and a driver of the mathematical culture that made wasan such a powerful force.
 
-In this section, we will feature problems and contemporary solutions written up by several wasan researchers. We will do our best to feature them in English and in Japanese so you should see them in whichever language you ought
+Like any other academic discipline, mathematics in the 18th and 19th centuries was not the global field of study that it is today. Rather than a slowly expanding monolith of interconnected logical statements about numbers and shapes, mathematics was then (as it had been for millenia) practiced very differently depending on geographic location. Techniques used in one part of the world might not be known elsewhere, and any instance of progress (e.g., the proving of a new theorem) faced steep obstacles to transmission between groups due to linguistic, notational, and cultural differences. The very purpose of mathematics (why learn it? how does it benefit us?) varied widely, as it still does today. Even within Edo period Japan, motivations for studying math were different for merchants (who might be interested in fast abacus calculations), calendar-makers (for whom estimates of pi and arc length calculations were paramount), and the pure mathematicians often associated with _wasan_, who favored aesthetics over utilitarian applications.
+
+Viewed from afar, 18th and 19th century Japan was just another place and time where math was practiced: people created and solved problems, developed techniques and abstract ideas, and taught others. Upon zooming in, however, _wasan_ appears as a remarkable thread in this larger tapestry of math history. Three factors are especially important:
+
+1. Chinese mathematics, as it existed around the beginning of the 17th century, formed the foundation of _wasan_.
+2. Due to an isolationist government, Edo period Japan had little intellectual contact with the rest of the world, though there are notable mathematical exceptions.
+3. Japan had a vibrant math culture [refer to “cultural phenomenon” introduction]
+
+As a result, we can view _wasan_ as a (nearly) closed system of mathematical innovation, which advanced far beyond its Chinese origins. Indeed, wasan mathematicians were able to solve very difficult problems without the tools of their European counterparts---tools that we take for granted today, as they are ubiquitous in classrooms around the world.
+
+Consider the 5(?) _sangaku_ problems below, which help illustrate _wasan’s_ position relative to its Chinese foundations, as well as contrasting approaches between traditional practitioners (also known as _wasanka_) and modern mathematicians.
+
+## Problem 1 
+
+This problem was posted [etc., etc.; include link to archive entry].
+
+A right triangle with legs of length 3 and 4 has an inscribed ellipse with its major axis parallel to the long leg of the triangle, as shown below. The minor axis of the ellipse has length one. Find the length of the major axis.
+
+<center>
+<img src="https://www.dropbox.com/scl/fi/52m1l9932u7qs5rbikf7d/orig.svg?rlkey=r7wkr25741uwesnwdfq0kiwbp&st=1g2h6f4g&raw=1" width=30%>
+</center>
+
+Let $u$ refer to this desired length. First, consider a modern approach to this problem, which might go as follows. Begin by placing the diagram on a Cartesian coordinate system:
+
+<center>
+<img src="https://www.dropbox.com/scl/fi/p17lohw9729uihp3ax4u8/coords.svg?rlkey=w81i91yuv1z4yuorune8cn957&st=epzwktc8&raw=1" width=40%>
+</center>
+
+Using techniques that many of us learned in secondary school, we can write down equations that describe the line containing the hypotenuse,
+
+$$y=3+3x/4,$$
+
+<!--<center>
+![XXX](https://www.dropbox.com/scl/fi/7usvd075916m33yj4ow6p/XXX.svg?rlkey=uz6yh61elwpko60n9cwporh7i&st=l55vunu1&raw=1)
+</center>-->
+
+as well as the ellipse:
+
+$$\frac{(x+u/2)^2}{u^2}+\frac{(y-1/2)^2}{1^2}=1.$$
+
+<!--<center>
+![YYY](https://www.dropbox.com/scl/fi/d1j49i5hkqbpr2dvdtv1e/YYY.svg?rlkey=r4cllmw6e05dinaw11mi4shrb&st=95uu7xwq&raw=1)
+</center>-->
+
+Since the ellipse and the hypotenuse are tangent at a single point (D), solving the two equations above simultaneously for $x$ must yield a single value. This means that the discriminant of the resulting quadratic equation must be equal to zero:
+
+$$120u-384=0.$$
+
+<!--<center>
+![ZZZ](https://www.dropbox.com/scl/fi/x3pcz21jnw33ol9zz0l0n/ZZZ.svg?rlkey=zmzugr5s6luczkfxm3xlzgnzx&st=ygkpydcq&raw=1)
+</center>-->
+
+Hence, the length of the major axis of the ellipse is 3.2.
+
+<h2></h2>
+
+While _wasanka_ would have been perfectly capable of the algebraic moves described above, including the “discriminant must equal zero” observation, there is a more fundamental reason why Edo-period Japanese mathematicians would not have solved the problem like this: the Cartesian coordinate system was not in the wasan toolkit. First introduced by René Descartes in 1637, _analytic geometry_ (also known as _coordinate geometry_) allows planar shapes to be realized as loci of points – ordered pairs $(x,y)$ – that satisfy algebraic expressions, like those for the line and ellipse above. Linking geometry and algebra in this way was a powerful innovation in mathematics, but due to Edo Japan’s policy of national seclusion _wasanka_ never incorporated it.
+
+Instead, Edo-period mathematicians had their own set of tools for working with ellipses. Unlike the ancient Greeks, who viewed an ellipse as a conic section, _wasanka_ thought of an ellipse as a section of a circular cylinder.
+
+<center>
+<img src="https://www.dropbox.com/scl/fi/1dacnnjq4fy2zef4cx65s/cone-cyl-web.svg?rlkey=snf8bjjyqdyk1t61wgigog9m8&st=z925ncme&raw=1" width=60%>
+</center>
+
+Looking at the cylinder, it’s easy to observe that the ellipse is, in a sense, a stretched-out version of the circle. An analysis of similar triangles shows that this circle-to-ellipse transformation preserves ratios along the direction of the stretch. This means we can view an ellipse as a linear (also “affine,” since there is no preferred origin) transformation of a circle. Linear transformations are especially useful when doing planar geometry, since a line that undergoes such a transformation is still a line.
+
+We can use this idea to transform the original picture in our problem into something simpler (i.e., with no ellipses). Just perform a horizontal stretch by a scale factor equal to $1/u$ (the effect of which is a horizontal compression). The transformed picture now has a circle of diameter $1$ inscribed in a right triangle with legs of length $3$ and $4/u$.
+
+<center>
+<img src="https://www.dropbox.com/scl/fi/h3k6croan2xcez4ld9jpk/orig-trans.svg?rlkey=w0bnqziqqthn7gdvwzglqco9o&st=2cwxkegv&raw=1" width=40%>
+</center>
+
+A _wasanka_ might now be in a position to apply one final theorem to obtain an equation, whether a statement imported from the Chinese (who studied right triangles extensively) or a homegrown geometric result. For example, it was likely known in Japan that for any circle of radius $r$ inscribed in a right triangle with legs $a$ and $b$,
+
+$$a=\frac{2r(b-r)}{b-2r}.$$
+
+<!--<center>
+![WWW](https://www.dropbox.com/scl/fi/5jcrj4f3tt655tki1onb2/WWW.svg?rlkey=6404duce1du6bxjw8k80npv4j&st=i75oj0v4&raw=1)
+</center>-->
+
+Plugging in our values, we find again that 
+
+$$u=3.2.$$
+
+<!--<center>
+![VVV](https://www.dropbox.com/scl/fi/sw1oyogpzhsfsc81swji5/VVV.svg?rlkey=oxzhcawo4jbche001mksah24z&st=0vv3tbu3&raw=1)
+</center>-->
+
+
+## Problem 2
+
+TBD
+
