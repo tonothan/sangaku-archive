@@ -30,6 +30,14 @@
 "type": "Manifest"
 },
 {
+"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1855_Yamagata_Ukishima_452.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1853_Yamagata_Hachiman_451.json",
+"type": "Manifest"
+},       
+{
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1891_Fukushima_Fudo-in_1218.json",
 "type": "Manifest"
 },
