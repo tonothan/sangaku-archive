@@ -1,5 +1,5 @@
 {
-  "collection": "https://preview.sangaku-archive.org/iiif/public/iiif/preview_sangaku-archive-collection-12Nov2025.json",
+  "collection": "https://preview.sangaku-archive.org/iiif/preview_sangaku-archive-collection-12Nov2025.json",
   "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site", "奉納者・ Dedicator", "流・ School", "種類・ Type"],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
