@@ -1342,10 +1342,6 @@
       "type": "Manifest"
     },
     {
-      "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1815_Aichi_Hoshoin_419.json",
-      "type": "Manifest"
-    },
-    {
       "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1815_Saitama_Musashi_1407.json",
       "type": "Manifest"
     },
@@ -1611,10 +1607,6 @@
     },
     {
       "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1827_Kagawa_Kotohira_1851.json",
-      "type": "Manifest"
-    },
-    {
-      "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1827_Kagawa_Kotohira_525.json",
       "type": "Manifest"
     },
     {
