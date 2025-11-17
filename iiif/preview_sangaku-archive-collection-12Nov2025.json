@@ -950,6 +950,10 @@
       "type": "Manifest"
     },
     {
+      "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1807_Fukui_Fukutsu-ji_1555.json",
+      "type": "Manifest"
+},
+    {
       "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1807_Nagano_Kitamuki_1265.json",
       "type": "Manifest"
     },
@@ -2327,6 +2331,10 @@
     },
     {
       "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1878_Saitama_Iwadono_353.json",
+      "type": "Manifest"
+    },
+    {
+      "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1879_Fukui_Fukutsu-ji_1589.json",
       "type": "Manifest"
     },
     {
