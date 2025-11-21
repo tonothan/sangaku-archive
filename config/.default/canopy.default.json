@@ -65,7 +65,7 @@
         "all": true
       },
       "summary": {
-        "enabled": false
+        "enabled": true
       }
     }
   },
