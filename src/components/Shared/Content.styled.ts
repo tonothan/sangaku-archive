@@ -36,6 +36,14 @@ const ContentStyled = styled("div", {
   flexShrink: 1,
   width: "calc(100% - 275px)",
 
+  variants: {
+    fullWidth: {
+      true: {
+        width: "100%",
+      },
+    },
+  },
+
   "@xs": {
     width: "100%",
   },

@@ -4,7 +4,7 @@
   "scripts": {
     "build": "next build",
     "build:static": "npm run build && next export",
-    "dev": "next -p 5001",
+    "dev": "next -p 5002",
     "lint": "next lint",
     "predev": "ts-node canopy.ts dev",
     "prebuild": "ts-node canopy.ts",

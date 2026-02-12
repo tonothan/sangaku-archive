@@ -1,5 +1,6 @@
 import { Actions, ResponsiveActions } from "./Header.styled";
 import { Content, Wrapper } from "@components/Header/Header.styled";
+import Logo from "./Logo";
 import React, { useEffect, useState } from "react";
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
@@ -30,22 +31,8 @@ const Header = () => {
   return (
     <Wrapper isVisible={headerVisible || pathname !== "/search" ? true : false}>
       <Content>
-        <Link
-          href="/"
-          style={{
-            color: "var(--gray-12)",
-            textDecoration: "none",
-          }}
-        >
-          <Heading
-            as="h1"
-            size="5"
-            weight="medium"
-            style={{ display: "flex", alignItems: "center", fontSize: "1em" }}>
-             <span style={{ fontFamily: "var(--canopy-display-font)", color: "var(--gray-12)" }}>
-            算額アーカイブ
-            </span>
-          </Heading>
+        <Link href="/">
+          <Logo />
         </Link>
         <ResponsiveActions>
           <button onClick={handleShowNav}>

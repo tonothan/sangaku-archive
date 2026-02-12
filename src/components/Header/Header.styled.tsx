@@ -27,7 +27,7 @@ const ResponsiveActions = styled("div", {
     cursor: "pointer",
   },
 
-  "@sm": {
+  "@md": {
     display: "flex",
   },
 });
@@ -37,7 +37,7 @@ const Actions = styled("div", {
   display: "flex",
   justifyContent: "flex-end",
 
-  "@sm": {
+  "@md": {
     flexDirection: "column-reverse",
     backgroundColor: "var(--gray-1)",
     position: "absolute",
