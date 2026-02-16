@@ -3,13 +3,26 @@ import {
   BarLabel,
   BarValue,
   Button,
+  ChartContainer,
   Controls,
+  FilterContainer,
   GraphBar,
   GraphContainer,
+  Input,
   TabButton,
   TabsContainer,
   ToggleGroup,
 } from "@styles/Metadata.styled";
+import {
+  Area,
+  AreaChart,
+  CartesianGrid,
+  ReferenceArea,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 import {
   ContentStyled,
   ContentWrapper,
@@ -45,6 +58,12 @@ interface MetadataItemProps {
 export default function Metadata() {
   const [viewMode, setViewMode] = useState<"list" | "graph">("list");
   const [sortOrder, setSortOrder] = useState<"chronological" | "count">("chronological");
+  const [filterYearFrom, setFilterYearFrom] = useState<string>("");
+  const [filterYearTo, setFilterYearTo] = useState<string>("");
+
+  // Selection state for drag-to-filter
+  const [refAreaLeft, setRefAreaLeft] = useState<number | string>("");
+  const [refAreaRight, setRefAreaRight] = useState<number | string>("");
 
   // Initialize with the first facet (e.g., Year/Date)
   const [activeTab, setActiveTab] = useState(FACETS[0]?.slug);
@@ -83,7 +102,11 @@ export default function Metadata() {
                 <TabButton
                   key={facet.slug}
                   active={activeTab === facet.slug}
-                  onClick={() => setActiveTab(facet.slug)}
+                  onClick={() => {
+                    setActiveTab(facet.slug);
+                    setFilterYearFrom("");
+                    setFilterYearTo("");
+                  }}
                 >
                   {facet.label}
                 </TabButton>
@@ -174,21 +197,147 @@ export default function Metadata() {
                 return a.value.localeCompare(b.value);
               });
 
+              const isYearFacet = label.includes("Year") || label.includes("年");
+              let filteredValues = sortedValues;
+
+              if (isYearFacet) {
+                filteredValues = sortedValues.filter((v) => {
+                  const year = getYearFromValue(v.value);
+                  if (year === -1) return true; // Keep items without parseable year? Or remove?
+                  const from = filterYearFrom ? parseInt(filterYearFrom, 10) : -Infinity;
+                  const to = filterYearTo ? parseInt(filterYearTo, 10) : Infinity;
+                  return year >= from && year <= to;
+                });
+              }
+
               const maxCount = Math.max(...values.map(v => v.doc_count));
 
               return (
                 <div key={slug}>
                   <Heading as="h2">{label}</Heading>
 
+                  {isYearFacet && (
+                    <FilterContainer>
+                      <label>From:</label>
+                      <Input
+                        type="number"
+                        placeholder="Year"
+                        value={filterYearFrom}
+                        onChange={(e) => setFilterYearFrom(e.target.value)}
+                      />
+                      <label>To:</label>
+                      <Input
+                        type="number"
+                        placeholder="Year"
+                        value={filterYearTo}
+                        onChange={(e) => setFilterYearTo(e.target.value)}
+                      />
+                      <Button
+                        onClick={() => {
+                          setFilterYearFrom("");
+                          setFilterYearTo("");
+                        }}
+                        style={{ marginLeft: "auto" }}
+                      >
+                        Reset
+                      </Button>
+                    </FilterContainer>
+                  )}
+
                   {viewMode === "list" ? (
                     <ul style={{ padding: "0" }}>
-                      {sortedValues.map((value) => (
+                      {filteredValues.map((value) => (
                         <MetadataItem {...value} path={path} key={value.slug} />
                       ))}
                     </ul>
+                  ) : isYearFacet ? (
+                    (() => {
+                      // Prepare data for the chart
+                      // 1. Map to get clean year and count
+                      // 2. Filter out invalid years (-1) so the scale isn't skewed
+                      // 3. Sort by year ascending regardless of the "Sort" button state (which is for valid list/bar)
+                      const chartData = filteredValues
+                        .map(v => ({
+                          original: v.value,
+                          year: getYearFromValue(v.value),
+                          count: v.doc_count,
+                          slug: v.slug
+                        }))
+                        .filter(item => item.year !== -1)
+                        .sort((a, b) => a.year - b.year);
+
+                      return (
+                        <ChartContainer>
+                          <ResponsiveContainer width="100%" height="100%">
+                            <AreaChart
+                              data={chartData}
+                              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                              onMouseDown={(e) => {
+                                if (e && e.activeLabel) {
+                                  setRefAreaLeft(e.activeLabel);
+                                }
+                              }}
+                              onMouseMove={(e) => {
+                                if (refAreaLeft && e && e.activeLabel) {
+                                  setRefAreaRight(e.activeLabel);
+                                }
+                              }}
+                              onMouseUp={() => {
+                                if (refAreaLeft && refAreaRight) {
+                                  // Ensure correct order (left is smaller)
+                                  const [bottom, top] = [Number(refAreaLeft), Number(refAreaRight)].sort((a, b) => a - b);
+
+                                  setFilterYearFrom(bottom.toString());
+                                  setFilterYearTo(top.toString());
+                                }
+                                // Reset selection
+                                setRefAreaLeft("");
+                                setRefAreaRight("");
+                              }}
+                              style={{ userSelect: 'none' }}
+                            >
+                              <defs>
+                                <linearGradient id="colorCount" x1="0" y1="0" x2="0" y2="1">
+                                  <stop offset="5%" stopColor="#4c6ef5" stopOpacity={0.8} />
+                                  <stop offset="95%" stopColor="#4c6ef5" stopOpacity={0} />
+                                </linearGradient>
+                              </defs>
+                              <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e0e0e0" />
+                              <XAxis
+                                dataKey="year"
+                                type="number"
+                                domain={['auto', 'auto']}
+                                tick={{ fill: '#666' }}
+                                tickCount={10}
+                                allowDataOverflow
+                              />
+                              <YAxis tick={{ fill: '#666' }} />
+                              <Tooltip
+                                contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                                labelStyle={{ color: '#666', marginBottom: '0.5rem' }}
+                                formatter={(value: any) => [value, "Count"]}
+                                labelFormatter={(label) => `Year: ${label}`}
+                              />
+                              <Area
+                                type="monotone"
+                                dataKey="count"
+                                stroke="#4c6ef5"
+                                strokeWidth={3}
+                                fillOpacity={1}
+                                fill="url(#colorCount)"
+                                animationDuration={300}
+                              />
+                              {refAreaLeft && refAreaRight ? (
+                                <ReferenceArea x1={refAreaLeft} x2={refAreaRight} strokeOpacity={0.3} fill="#4c6ef5" fillOpacity={0.3} />
+                              ) : null}
+                            </AreaChart>
+                          </ResponsiveContainer>
+                        </ChartContainer>
+                      );
+                    })()
                   ) : (
                     <GraphContainer>
-                      {sortedValues.map((value) => (
+                      {filteredValues.map((value) => (
                         <GraphBar key={value.slug}>
                           <BarLabel>
                             <Link href={`${path}${value.slug}`}>{value.value}</Link>

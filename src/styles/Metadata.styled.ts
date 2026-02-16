@@ -113,6 +113,27 @@ const TabButton = styled("button", {
     },
 });
 
+const ChartContainer = styled("div", {
+    width: "100%",
+    height: "500px",
+    marginTop: "$gr3",
+});
+
+const FilterContainer = styled("div", {
+    display: "flex",
+    alignItems: "center",
+    gap: "$gr2",
+    marginBottom: "$gr2",
+});
+
+const Input = styled("input", {
+    padding: "$gr1",
+    fontSize: "$gr2",
+    border: "1px solid var(--gray-6)",
+    borderRadius: "4px",
+    width: "80px",
+});
+
 export {
     Controls,
     ToggleGroup,
@@ -123,5 +144,8 @@ export {
     BarLabel,
     BarValue,
     TabsContainer,
-    TabButton
+    TabButton,
+    ChartContainer,
+    FilterContainer,
+    Input
 };
