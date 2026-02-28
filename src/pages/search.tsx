@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 
 import Container from "@components/Shared/Container";
 import Facets from "@components/Facets/Facets";
+import FacetsSidebar from "@components/Facets/Sidebar";
+import { FacetsProvider } from "@context/facets";
 import Layout from "@components/layout";
 import { LocaleString } from "@hooks/useLocale";
 import { SearchHeaderStyled } from "@components/Search/Header.styled";
+import { SearchForm, SearchLayout, SearchSidebarWrapper, SearchFacetsModalWrapper } from "@components/Search/Search.styled";
 import SearchResults from "@components/Search/Results";
+import ActiveFilters from "@components/Facets/ActiveFilters";
 import { Summary } from "@samvera/clover-iiif/primitives";
 import { Text } from "@radix-ui/themes";
 import { searchRequest } from "@lib/search/request";
@@ -13,7 +17,7 @@ import { useCanopyState } from "@context/canopy";
 import { useSearchParams } from "next/navigation";
 
 const Search = () => {
-  const searchParams: URLSearchParams = useSearchParams();
+  const searchParams = useSearchParams();
 
   const [pages, setPages] = useState<string[]>([]);
   const [params, setParams] = useState<URLSearchParams>();
@@ -57,20 +61,33 @@ const Search = () => {
 
   return (
     <Layout>
-      <SearchHeaderStyled ref={searchHeaderRef}>
-        <Facets />
+      <FacetsProvider>
+        <SearchHeaderStyled ref={searchHeaderRef}>
+          <SearchFacetsModalWrapper>
+            <Facets />
+          </SearchFacetsModalWrapper>
+          <Container containerType="wide">
+            {searchSummary && (
+              <Text id="canopy-search-summary">
+                <Summary summary={searchSummary} />{" "}
+                {LocaleString("searchResults")}
+              </Text>
+            )}
+          </Container>
+        </SearchHeaderStyled>
+
         <Container containerType="wide">
-          {searchSummary && (
-            <Text id="canopy-search-summary">
-              <Summary summary={searchSummary} />{" "}
-              {LocaleString("searchResults")}
-            </Text>
-          )}
+          <SearchLayout>
+            <SearchSidebarWrapper>
+              <FacetsSidebar />
+            </SearchSidebarWrapper>
+            <main style={{ flexGrow: 1, minWidth: 0 }}>
+              <ActiveFilters />
+              <SearchResults pages={pages} query={params} />
+            </main>
+          </SearchLayout>
         </Container>
-      </SearchHeaderStyled>
-      <Container containerType="wide">
-        <SearchResults pages={pages} query={params} />
-      </Container>
+      </FacetsProvider>
     </Layout>
   );
 };

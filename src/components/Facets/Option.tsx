@@ -26,8 +26,17 @@ export const FacetsOption: React.FC<FacetsOptionProps> = ({
   const { facetsActive } = facetsState;
 
   const handleCheckedChange = (checked: boolean) => {
-    facetsActive.delete(facet);
-    checked && facetsActive.append(facet, option.slug);
+    if (checked) {
+      facetsActive.append(facet, option.slug);
+    } else {
+      const allValues = typeof facetsActive.getAll === "function" ? facetsActive.getAll(facet) : [];
+      facetsActive.delete(facet);
+      allValues.forEach((val: string) => {
+        if (val !== option.slug) {
+          facetsActive.append(facet, val);
+        }
+      });
+    }
 
     facetsDispatch({
       type: "updateFacetsActive",

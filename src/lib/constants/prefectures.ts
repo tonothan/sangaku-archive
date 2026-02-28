@@ -10,6 +10,8 @@ export const PREFECTURE_ORDER = [
 
 // Helper to get sort index. Returns a high number if not found to put it at the end.
 export const getPrefectureSortIndex = (name: string): number => {
-    const index = PREFECTURE_ORDER.indexOf(name);
+    // Extract the Japanese name part if it has "・Romaji"
+    const jpName = name.split('・')[0];
+    const index = PREFECTURE_ORDER.indexOf(jpName);
     return index === -1 ? 999 : index;
 };

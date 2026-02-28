@@ -19,6 +19,8 @@ const FacetsModal = () => {
 
   const handleClearAll = () => {
     FACETS.forEach((facet: any) => facetsActive.delete(facet.slug));
+    facetsActive.delete("year_from");
+    facetsActive.delete("year_to");
     facetsDispatch({
       type: "updateFacetsActive",
       facetsActive: facetsActive,
@@ -47,7 +49,7 @@ const FacetsModal = () => {
         </Flex>
         <div>
           <Accordion.Root type="single" collapsible={true}>
-            {FACETS.map((facet: any) => (
+            {FACETS.filter((facet: any) => !facet.label.includes("Region")).map((facet: any) => (
               <Facet {...facet} key={facet.slug} />
             ))}
           </Accordion.Root>

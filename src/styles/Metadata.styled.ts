@@ -134,6 +134,21 @@ const Input = styled("input", {
     width: "80px",
 });
 
+const Select = styled("select", {
+    padding: "$gr1",
+    fontSize: "$gr2",
+    border: "1px solid var(--gray-6)",
+    borderRadius: "4px",
+    backgroundColor: "var(--gray-1)",
+    cursor: "pointer",
+    minWidth: "120px",
+    color: "var(--gray-11)",
+    "&:focus": {
+        outline: "none",
+        border: "1px solid var(--primary-9)",
+    }
+});
+
 export {
     Controls,
     ToggleGroup,
@@ -147,5 +162,6 @@ export {
     TabButton,
     ChartContainer,
     FilterContainer,
-    Input
+    Input,
+    Select
 };

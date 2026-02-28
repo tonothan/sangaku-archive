@@ -13,36 +13,38 @@ const Layout = ({ children }: { children: ReactNode }) => {
   const cloverColors =
     theme === "dark"
       ? {
-          accent: "var(--accent-9)",
-          accentAlt: "var(--accent-a3)",
-          primary: "var(--gray-1)",
-          secondary: "var(--gray-12)",
-        }
+        accent: "var(--accent-9)",
+        accentAlt: "var(--accent-a3)",
+        primary: "var(--gray-1)",
+        secondary: "var(--gray-12)",
+      }
       : {
-          accent: "var(--accent-11)",
-          accentAlt: "var(--accent-a12)",
-          primary: "var(--gray-12)",
-          secondary: "var(--gray-1)",
-        };
-
-  const StyledLayout = styled("div", {
-    "--colors-accent": cloverColors.accent,
-    "--colors-accentAlt": cloverColors.accentAlt,
-    "--colors-accentMuted": cloverColors.accent,
-    "--colors-primary": cloverColors.primary,
-    "--colors-primaryAlt": cloverColors.primary,
-    "--colors-primaryMuted": cloverColors.primary,
-    "--colors-secondary": cloverColors.secondary,
-    "--colors-secondaryAlt": cloverColors.secondary,
-    "--colors-secondaryMuted": cloverColors.secondary,
-  });
+        accent: "var(--accent-11)",
+        accentAlt: "var(--accent-a12)",
+        primary: "var(--gray-12)",
+        secondary: "var(--gray-1)",
+      };
 
   return (
-    <StyledLayout>
+    <div
+      style={
+        {
+          "--colors-accent": cloverColors.accent,
+          "--colors-accentAlt": cloverColors.accentAlt,
+          "--colors-accentMuted": cloverColors.accent,
+          "--colors-primary": cloverColors.primary,
+          "--colors-primaryAlt": cloverColors.primary,
+          "--colors-primaryMuted": cloverColors.primary,
+          "--colors-secondary": cloverColors.secondary,
+          "--colors-secondaryAlt": cloverColors.secondary,
+          "--colors-secondaryMuted": cloverColors.secondary,
+        } as React.CSSProperties
+      }
+    >
       <Header />
       <Main>{children}</Main>
       <Footer />
-    </StyledLayout>
+    </div>
   );
 };
 

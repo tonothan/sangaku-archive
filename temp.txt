@@ -1,0 +1,21 @@
+
+> ts-lint-commit-hook
+> tsc --noEmit
+
+src/components/Shared/Button/Button.tsx(15,33): error TS2322: Type '{ children: ReactNode; href: string; target: string | undefined; }' is not assignable to type 'IntrinsicAttributes & CanopyLinkProps'.
+  Property 'target' does not exist on type 'IntrinsicAttributes & CanopyLinkProps'.
+src/components/Work/LinkingProperty.tsx(16,14): error TS2709: Cannot use namespace 'PrimitivesExternalWebResource' as a type.
+src/components/Work/LinkingProperty.tsx(17,12): error TS2709: Cannot use namespace 'PrimitivesIIIFResource' as a type.
+src/components/Work/LinkingProperty.tsx(18,15): error TS2709: Cannot use namespace 'PrimitivesExternalWebResource' as a type.
+src/components/Work/LinkingProperty.tsx(19,13): error TS2709: Cannot use namespace 'PrimitivesExternalWebResource' as a type.
+src/pages/404.tsx(17,7): error TS2322: Type '{ content: Element; frontMatter: { [key: string]: any; }; }' is not assignable to type 'IntrinsicAttributes & LayoutFrontMatter'.
+  Property 'content' does not exist on type 'IntrinsicAttributes & LayoutFrontMatter'.
+src/pages/404.tsx(17,17): error TS2741: Property 'source' is missing in type '{ compiledSource: string; scope: Record<string, unknown>; frontmatter: Record<string, unknown>; }' but required in type '{ source: MDXRemoteProps; customComponents?: Record<string, any> | undefined; }'.
+src/pages/_app.tsx(91,16): error TS2322: Type '{ children: Element; accentColor: "red" | "green" | "yellow" | "blue" | "cyan" | "gray" | "ruby" | "gold" | "bronze" | "brown" | "amber" | "orange" | "tomato" | "crimson" | ... 12 more ... | undefined; grayColor: string; panelBackground: string; radius: "small" | ... 4 more ... | undefined; scaling: "100%" | ... 4 m...' is not assignable to type 'ThemeProps'.
+  Types of property 'grayColor' are incompatible.
+    Type 'string' is not assignable to type '"gray" | "auto" | "olive" | "mauve" | "slate" | "sage" | "sand" | undefined'.
+src/pages/works/[slug].tsx(42,27): error TS7006: Parameter 'props' implicitly has an 'any' type.
+src/pages/works/[slug].tsx(50,18): error TS7006: Parameter 'props' implicitly has an 'any' type.
+src/pages/works/[slug].tsx(51,19): error TS7006: Parameter 'props' implicitly has an 'any' type.
+src/pages/works/[slug].tsx(52,17): error TS7006: Parameter 'props' implicitly has an 'any' type.
+src/pages/works/[slug].tsx(53,18): error TS7006: Parameter 'props' implicitly has an 'any' type.

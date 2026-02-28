@@ -1,6 +1,14 @@
 {
   "collection": "https://preview.sangaku-archive.org/iiif/preview_sangaku-archive-collection-12Nov2025.json",
-  "metadata": ["年・ Year", "県・ Prefecture", "奉納所・ Dedication site", "奉納者・ Dedicator", "流・ School", "種類・ Type"],
+  "metadata": [
+    "年・ Year",
+    "県・ Prefecture",
+    "地域・ Region",
+    "奉納所・ Dedication site",
+    "奉納者・ Dedicator",
+    "流・ School",
+    "種類・ Type"
+  ],
   "featured": [
     "https://tonothan.github.io/canopy_samplemanifest-2.json"
   ],
@@ -17,12 +25,23 @@
     }
   ],
   "map": {
-    "defaultBounds": [[51.505, -0.09]],
+    "defaultBounds": [
+      [
+        51.505,
+        -0.09
+      ]
+    ],
     "enabled": true,
     "icon": {
       "iconUrl": "images/marker-icon.png",
-      "iconSize": [24, 36],
-      "iconAnchor": [12, 36]
+      "iconSize": [
+        24,
+        36
+      ],
+      "iconAnchor": [
+        12,
+        36
+      ]
     },
     "tileLayers": [
       {
@@ -35,7 +54,10 @@
   "search": {
     "enabled": true,
     "flexSearch": {
-      "charset": ["latin:extra", "japanese"],
+      "charset": [
+        "latin:extra",
+        "japanese"
+      ],
       "optimize": true,
       "tokenize": "full",
       "bidirectional": true,
