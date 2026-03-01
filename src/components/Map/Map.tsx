@@ -41,11 +41,18 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
   const icon = Leaflet.icon(mapVars.icon);
   const [bounds, setBounds] =
     useState<Leaflet.LatLngBoundsExpression>(defaultBounds);
+  const [initialBoundsSet, setInitialBoundsSet] = useState(false);
 
   useEffect(() => {
-    const manifestBounds = getBounds(manifests);
-    manifestBounds.length > 0 && setBounds(manifestBounds);
-  }, [manifests]);
+    // Only set bounds on the first load, do not update when manifests (filtered markers) change.
+    if (!initialBoundsSet) {
+      const manifestBounds = getBounds(manifests);
+      if (manifestBounds.length > 0) {
+        setBounds(manifestBounds);
+        setInitialBoundsSet(true);
+      }
+    }
+  }, [manifests, initialBoundsSet]);
 
   useEffect(() => {
     if (mapRef.current && bounds) {
@@ -77,41 +84,41 @@ const Map: React.FC<MapProps> = ({ manifests }) => {
             );
           })}
         </LayersControl>
-          <FeatureGroup>
-            {manifests.map((item: any) =>
-              item.features.map((feature: any, index: any) => (
-                <Marker
-                  position={[
-                    feature.geometry.coordinates[1],
-                    feature.geometry.coordinates[0],
-                  ]}
-                  icon={icon}
-                  key={index}
-                >
-                  <Popup>
-                    <figure>
-                      <Link href={item.slug}>
-                        <Thumbnail thumbnail={item.thumbnail} />{" "}
-                        <figcaption>
-                          <Container className="slide-inner" isFlex>
-                            <Label
-                              label={
-                                getLabel(
-                                  feature.properties.label
-                                ) as unknown as InternationalString
-                              }
-                              as="span"
-                              className="slide-label"
-                            />
-                          </Container>
-                        </figcaption>
-                      </Link>
-                    </figure>
-                  </Popup>
-                </Marker>
-              ))
-            )}
-          </FeatureGroup>
+        <FeatureGroup>
+          {manifests.map((item: any) =>
+            item.features.map((feature: any, index: any) => (
+              <Marker
+                position={[
+                  feature.geometry.coordinates[1],
+                  feature.geometry.coordinates[0],
+                ]}
+                icon={icon}
+                key={index}
+              >
+                <Popup>
+                  <figure>
+                    <Link href={item.slug}>
+                      <Thumbnail thumbnail={item.thumbnail} />{" "}
+                      <figcaption>
+                        <Container className="slide-inner" isFlex>
+                          <Label
+                            label={
+                              getLabel(
+                                feature.properties.label
+                              ) as unknown as InternationalString
+                            }
+                            as="span"
+                            className="slide-label"
+                          />
+                        </Container>
+                      </figcaption>
+                    </Link>
+                  </figure>
+                </Popup>
+              </Marker>
+            ))
+          )}
+        </FeatureGroup>
       </MapContainer>
     </MapStyled>
   );

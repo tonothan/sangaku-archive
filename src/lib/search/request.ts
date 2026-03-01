@@ -24,7 +24,12 @@ const searchRequest = ({
   const searchUrl = new URL(`${baseUrl}/search`);
   searchUrl.search = params?.toString();
 
-  const results = getResults(baseUrl, q, activeFacets, flexSearch);
+  const yearFromStr = params?.get("year_from");
+  const yearToStr = params?.get("year_to");
+  const yearFrom = yearFromStr ? parseInt(yearFromStr, 10) : undefined;
+  const yearTo = yearToStr ? parseInt(yearToStr, 10) : undefined;
+
+  const results = getResults(baseUrl, q, activeFacets, flexSearch, yearFrom, yearTo);
   const pages = getPages(results, 10);
   const items = page
     ? getPageCollection(results, pages, parseInt(page as string))
@@ -40,10 +45,10 @@ const searchRequest = ({
     items: items,
     ...(page
       ? {
-          summary: {
-            none: [`${results.length}}`],
-          },
-        }
+        summary: {
+          none: [`${results.length}}`],
+        },
+      }
       : { summary: { none: [`${results.length}`] } }),
     ...(page && { partOf: getPartOf(searchUrl) }),
   };
