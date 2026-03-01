@@ -32,7 +32,6 @@ import React, { useState } from "react";
 
 import Container from "@components/Shared/Container";
 import FACETS from "@.canopy/facets.json";
-import Heading from "@components/Shared/Heading/Heading";
 import Layout from "@components/layout";
 import Link from "@components/Shared/Link";
 import { getPrefectureSortIndex } from "@src/lib/constants/prefectures";
@@ -70,9 +69,10 @@ const MetadataItem: React.FC<MetadataItemProps> = ({
 };
 
 export default function Metadata() {
-  const METADATA_FACETS = FACETS.filter((facet: any) => !facet.label.includes("Dedication site") && !facet.label.includes("Dedicator") && !facet.label.includes("奉納所") && !facet.label.includes("奉納者") && !facet.label.includes("Region") && !facet.label.includes("地域"));
-  const [viewMode, setViewMode] = useState<"list" | "graph">("graph");
-  const [sortOrder, setSortOrder] = useState<"chronological" | "count">("chronological");
+  // eslint-disable-next-line @typescript-eslint/sort-type-union-intersection-members
+  const METADATA_FACETS = FACETS.filter((facet: any) => !facet.label.includes("Dedication site") && !facet.label.includes("Dedicator") && !facet.label.includes("Region") && !facet.label.includes("地域") && !facet.label.includes("奉納所") && !facet.label.includes("奉納者"));
+  const [viewMode, setViewMode] = useState("graph");
+  const [sortOrder, setSortOrder] = useState("chronological");
   const [filterYearFrom, setFilterYearFrom] = useState<string>("");
   const [filterYearTo, setFilterYearTo] = useState<string>("");
   const [appliedYearFrom, setAppliedYearFrom] = useState<string>("");
@@ -135,10 +135,10 @@ export default function Metadata() {
         doc_count = docs.length;
       }
 
-      let regionCounts: Record<string, number> = {};
+      const regionCounts: Record<string, number> = {};
 
       if (selectedRegions.length > 0) {
-        let intersectedDocs = new Set<number>();
+        const intersectedDocs = new Set<number>();
 
         selectedRegions.forEach((reg: any) => {
           const regDocs = reg.docs || [];

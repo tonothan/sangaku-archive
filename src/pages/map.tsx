@@ -2,8 +2,8 @@
 
 import "leaflet/dist/leaflet.css";
 
-import { Button, FilterContainer, Select, Input } from "@styles/Metadata.styled";
-import { Slider, Text, Flex, TextField } from "@radix-ui/themes";
+import { Button, Select, Input } from "@styles/Metadata.styled";
+import { Slider, Flex, TextField } from "@radix-ui/themes";
 import React, { useState } from "react";
 import { canopyFacets, canopyManifests } from "@lib/constants/canopy";
 
@@ -11,7 +11,6 @@ import Layout from "@components/layout";
 import { Manifest } from "@iiif/presentation-3";
 import dynamic from "next/dynamic";
 import { getFeatures } from "@lib/iiif/navPlace";
-import { getPrefectureSortIndex } from "@src/lib/constants/prefectures";
 
 const Map = dynamic(() => import("../components/Map/Map"), { ssr: false });
 
@@ -41,8 +40,8 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
   const maxYear = years.length > 0 ? Math.max(...years) : 1900;
 
   const [yearRange, setYearRange] = useState([minYear, maxYear]);
-  const [inputFrom, setInputFrom] = useState<string | number>(minYear);
-  const [inputTo, setInputTo] = useState<string | number>(maxYear);
+  const [inputFrom, setInputFrom] = useState<number | string>(minYear);
+  const [inputTo, setInputTo] = useState<number | string>(maxYear);
 
   const handleYearChange = (newRange: number[]) => {
     setYearRange(newRange);
@@ -52,21 +51,30 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
 
   const schools = schoolFacet ? [...schoolFacet.values].sort((a: any, b: any) => a.value.localeCompare(b.value)) : [];
 
-  const getFilteredDocs = (filterValue: string, facetValues: any[]) => {
-    if (!filterValue) return null;
-    const selected = facetValues.find(v => v.slug === filterValue);
-    return selected ? new Set(selected.docs) : new Set();
-  };
-
-  const schoolDocs = getFilteredDocs(filterSchool, schools);
-
-  const filteredManifests = manifests.filter((manifest, index) => {
+  const filteredManifests = manifests.filter((manifest) => {
     if (!manifest.navPlace) return false;
 
     // School Filter
-    if (schoolDocs && !schoolDocs.has(index)) return false;
+    if (filterSchool && filterSchool !== "") {
+      const selectedSchool = schools.find((s: any) => s.slug === filterSchool);
+      if (selectedSchool) {
+        if (!manifest.metadata) return false;
 
-    // Search Query filter (checks title/label or summary)
+        const schoolMeta = manifest.metadata.find((m: any) => {
+          const label = m.label ? Object.values(m.label).flat().join("") : "";
+          return label.includes("School") || label.includes("流");
+        });
+
+        if (!schoolMeta) return false;
+
+        const valStr = schoolMeta.value ? Object.values(schoolMeta.value).flat().join("") : "";
+        if (!valStr.includes(selectedSchool.value)) {
+          return false;
+        }
+      }
+    }
+
+    // Search Query filter (checks title/label, summary, or metadata)
     if (searchQuery.trim() !== "") {
       const q = searchQuery.toLowerCase();
       // presentation-3 label could be international string
@@ -74,7 +82,11 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
         if (!labelObj) return "";
         let str = "";
         Object.values(labelObj).forEach((vals: any) => {
-          str += vals.join(" ") + " ";
+          if (Array.isArray(vals)) {
+            str += vals.join(" ") + " ";
+          } else if (typeof vals === "string") {
+            str += vals + " ";
+          }
         });
         return str.toLowerCase();
       };
@@ -82,7 +94,16 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
       const labelMatch = getLabelString(manifest.label).includes(q);
       const summaryMatch = getLabelString(manifest.summary).includes(q);
 
-      if (!labelMatch && !summaryMatch) return false;
+      let metadataMatch = false;
+      if (manifest.metadata && Array.isArray(manifest.metadata)) {
+        metadataMatch = manifest.metadata.some((m: any) => {
+          const mLabel = getLabelString(m.label);
+          const mValue = getLabelString(m.value);
+          return mLabel.includes(q) || mValue.includes(q);
+        });
+      }
+
+      if (!labelMatch && !summaryMatch && !metadataMatch) return false;
     }
 
     // Year range filter
@@ -223,6 +244,25 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
           >
             {isFiltersOpen ? "◀ Hide Filters" : "Filters ▶"}
           </Button>
+
+          <div
+            style={{
+              position: "absolute",
+              top: "20px",
+              right: "20px",
+              zIndex: 1000,
+              backgroundColor: "var(--gray-1)",
+              padding: "8px 16px",
+              borderRadius: "8px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+              fontWeight: 600,
+              fontSize: "14px",
+              color: "var(--gray-12)",
+              pointerEvents: "none",
+            }}
+          >
+            {features.length} {features.length === 1 ? "Sangaku visible" : "Sangakus visible"}
+          </div>
 
           <Map manifests={features} />
         </div>

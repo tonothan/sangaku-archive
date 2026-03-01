@@ -3,7 +3,6 @@ import React, { ReactNode } from "react";
 import Footer from "./Footer/Footer";
 import Header from "@components/Header/Header";
 import Main from "./Shared/Main";
-import { styled } from "@src/styles/stitches";
 import { useTheme } from "next-themes";
 
 const Layout = ({ children }: { children: ReactNode }) => {

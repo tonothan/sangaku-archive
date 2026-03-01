@@ -7,7 +7,7 @@ import { FacetsProvider } from "@context/facets";
 import Layout from "@components/layout";
 import { LocaleString } from "@hooks/useLocale";
 import { SearchHeaderStyled } from "@components/Search/Header.styled";
-import { SearchForm, SearchLayout, SearchSidebarWrapper, SearchFacetsModalWrapper } from "@components/Search/Search.styled";
+import { SearchLayout, SearchSidebarWrapper, SearchFacetsModalWrapper } from "@components/Search/Search.styled";
 import SearchResults from "@components/Search/Results";
 import ActiveFilters from "@components/Facets/ActiveFilters";
 import { Summary } from "@samvera/clover-iiif/primitives";
@@ -57,7 +57,7 @@ const Search = () => {
           searchSummary: summary,
         });
     }
-  }, [params, config]);
+  }, [params, config, canopyDispatch]);
 
   return (
     <Layout>

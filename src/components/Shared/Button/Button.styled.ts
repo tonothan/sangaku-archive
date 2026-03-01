@@ -8,13 +8,11 @@ const ButtonStyled = styled(RadixThemesButton, {
 const ButtonWrapper = styled("div", {
   margin: "$gr4 0 0",
   display: "flex",
+  flexWrap: "wrap",
+  gap: "$gr3",
 
   [`> ${ButtonStyled}`]: {
-    marginRight: "$gr3",
-
-    "&:last-child": {
-      margin: "0",
-    },
+    marginRight: 0,
   },
 });
 
