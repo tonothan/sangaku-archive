@@ -26,6 +26,7 @@ const useNavigation = ({ relativePath }: { relativePath?: string }) => {
         console.warn("The relative _meta.json file could not be found.");
       }
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return { navigation };

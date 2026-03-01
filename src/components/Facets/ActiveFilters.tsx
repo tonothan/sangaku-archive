@@ -3,7 +3,6 @@ import { Flex, Badge, IconButton } from "@radix-ui/themes";
 import { Cross2Icon } from "@radix-ui/react-icons";
 import { useFacetsState } from "@context/facets";
 import FACETS from "@.canopy/facets.json";
-import { LocaleString } from "@hooks/useLocale";
 import { useRouter } from "next/router";
 
 const ActiveFilters = () => {

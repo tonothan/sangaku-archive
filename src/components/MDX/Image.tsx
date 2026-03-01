@@ -17,6 +17,7 @@ const MDXImage = ({
   return (
     <StyledMDXImageFigure>
       <StyledMDXImage css={{ height }}>
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
         <Image src={src} isTiledImage={isTiledImage} label={label} />
       </StyledMDXImage>
       {label && (

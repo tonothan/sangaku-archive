@@ -28,7 +28,7 @@ const FacetsActivate: React.FC = () => {
 
   useEffect(
     () => setIsScrolling(Boolean(position > headerHeight - 100)),
-    [position, headerHeight]
+    [position]
   );
 
   return (

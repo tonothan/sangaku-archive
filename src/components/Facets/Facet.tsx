@@ -7,7 +7,7 @@ import {
 import React, { useEffect, useState } from "react";
 
 import { ChevronDownIcon } from "@radix-ui/react-icons";
-import { Slider, Text, Flex, TextField } from "@radix-ui/themes";
+import { Slider, Flex, TextField } from "@radix-ui/themes";
 import FacetsOption from "./Option";
 import { LocaleString } from "@hooks/useLocale";
 import { useFacetsState } from "@context/facets";
@@ -48,8 +48,8 @@ export const FacetsFacet: React.FC<FacetsFacetProps> = ({
   const maxYear = isYearFacet && years.length > 0 ? Math.max(...years) : 1900;
 
   const [yearRange, setYearRange] = useState([minYear, maxYear]);
-  const [inputFrom, setInputFrom] = useState<string | number>(minYear);
-  const [inputTo, setInputTo] = useState<string | number>(maxYear);
+  const [inputFrom, setInputFrom] = useState<number | string>(minYear);
+  const [inputTo, setInputTo] = useState<number | string>(maxYear);
 
   // Sync state with URL params
   useEffect(() => {

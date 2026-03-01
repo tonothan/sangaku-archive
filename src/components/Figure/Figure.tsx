@@ -28,7 +28,7 @@ const Figure: React.FC<FigureProps> = ({
 
     // @ts-ignore
     if (imgRef?.current && imgRef?.current?.complete) setLoaded(true);
-  }, []);
+  }, [region, resource, size]);
 
   return (
     <Wrapper>
@@ -39,11 +39,11 @@ const Figure: React.FC<FigureProps> = ({
         style={
           isCover
             ? {
-                objectFit: "cover",
-                objectPosition: "50% 50%",
-                width: "100%",
-                height: "100%",
-              }
+              objectFit: "cover",
+              objectPosition: "50% 50%",
+              width: "100%",
+              height: "100%",
+            }
             : {}
         }
         onLoad={() => setLoaded(true)}

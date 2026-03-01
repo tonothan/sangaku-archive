@@ -25,6 +25,7 @@ const MDXCard = ({ iiifContent }: { iiifContent: string }) => {
           },
         ],
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [iiifContent]);
 
   if (!resource) return null;

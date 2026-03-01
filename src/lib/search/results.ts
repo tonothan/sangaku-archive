@@ -60,7 +60,7 @@ const getResults = (
           const f = yearFrom !== undefined ? yearFrom : -Infinity;
           const t = yearTo !== undefined ? yearTo : Infinity;
           if (year >= f && year <= t) {
-            v.docs.forEach((d: number) => yearDocs!.add(d));
+            v.docs.forEach((d: number) => yearDocs?.add(d));
           }
         } else {
           // If no year could be extracted but filtering is on, what should we do?

@@ -4,7 +4,6 @@ import Logo from "./Logo";
 import React, { useEffect, useState } from "react";
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { Heading } from "@radix-ui/themes";
 import Link from "@components/Shared/Link";
 import Locale from "@components/Shared/Locale/Locale";
 import Nav from "@components/Nav/Nav";
