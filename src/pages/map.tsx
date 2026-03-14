@@ -283,9 +283,22 @@ export async function getStaticProps() {
   try {
     const pageTitle = "Map";
 
+    const allManifests = canopyManifests() as Partial<Manifest>[];
+    const mapManifests = allManifests
+      .filter((m: any) => m.navPlace)
+      .map((m: any) => ({
+        id: m.id,
+        slug: m.slug,
+        navPlace: m.navPlace,
+        thumbnail: m.thumbnail || null,
+        label: m.label || null,
+        summary: m.summary || null,
+        metadata: m.metadata || null,
+      }));
+
     return {
       props: {
-        manifests: canopyManifests(),
+        manifests: mapManifests,
         facets: canopyFacets(),
         pageTitle,
       },
