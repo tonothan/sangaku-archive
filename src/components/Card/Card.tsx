@@ -11,7 +11,6 @@ import React from "react";
 import { SearchResponseItem } from "@customTypes/search/search";
 import { getLabel } from "@lib/iiif/label";
 import { useInView } from "react-intersection-observer";
-
 interface CardProps {
   resource: SearchResponseItem;
 }
@@ -25,7 +24,7 @@ const Card: React.FC<CardProps> = ({ resource }) => {
 
   if (width && height) aspectRatio = width / height;
 
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({ triggerOnce: true });
   const alt = getLabel(label);
 
   return (
