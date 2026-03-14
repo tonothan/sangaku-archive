@@ -236,7 +236,7 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
             onClick={() => setIsFiltersOpen(!isFiltersOpen)}
             style={{
               position: "absolute",
-              top: "20px",
+              bottom: "20px",
               left: "20px",
               zIndex: 1000,
               boxShadow: "0 2px 8px rgba(0,0,0,0.15)"
@@ -248,7 +248,7 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
           <div
             style={{
               position: "absolute",
-              top: "20px",
+              bottom: "20px",
               right: "20px",
               zIndex: 1000,
               backgroundColor: "var(--gray-1)",
@@ -261,7 +261,7 @@ export default function MapPage({ manifests, facets }: MapPageProps) {
               pointerEvents: "none",
             }}
           >
-            {features.length} {features.length === 1 ? "Sangaku visible" : "Sangakus visible"}
+            Entries ({features.length})
           </div>
 
           <Map manifests={features} />
