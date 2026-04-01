@@ -1,6 +1,6 @@
 {
   "@context": "https://iiif.io/api/presentation/3/context.json",
-  "id": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
+  "id": "https://tonothan.github.io/public/iiif/sangaku-archive-samplecollection.json",
   "type": "Collection",
   "label": {
     "en": [
@@ -2178,10 +2178,6 @@
 "type": "Manifest"
 },
 {
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1815_Aichi_Hoshoin_419.json",
-"type": "Manifest"
-},
-{
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1824_Nagano_Komoro_66.json",
 "type": "Manifest"
 },
@@ -2779,10 +2775,6 @@
 },
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1853_Kyoto_Takenobu_1523.json",
-"type": "Manifest"
-},
-{
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1790_Kyoto_Nagaoka_1514.json",
 "type": "Manifest"
 },
 {
