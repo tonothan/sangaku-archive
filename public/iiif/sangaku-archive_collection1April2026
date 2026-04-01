@@ -1,6 +1,6 @@
 {
   "@context": "https://iiif.io/api/presentation/3/context.json",
-  "id": "https://tonothan.github.io/public/iiif/sangaku-archive_collection1April2026.json",
+  "id": "https://tonothan.github.io/public/iiif/sangaku-archive-samplecollection.json",
   "type": "Collection",
   "label": {
     "en": [
