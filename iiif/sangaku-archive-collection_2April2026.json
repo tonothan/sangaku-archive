@@ -2680,7 +2680,7 @@
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1832_Aichi_Osu_2048.json",
 "type": "Manifest"
-},
+},Osu
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1833_Aichi_Osu_2049.json",
 "type": "Manifest"
@@ -2779,10 +2779,6 @@
 },
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1853_Kyoto_Takenobu_1523.json",
-"type": "Manifest"
-},
-{
-"id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1790_Kyoto_Nagaoka_1514.json",
 "type": "Manifest"
 },
 {
