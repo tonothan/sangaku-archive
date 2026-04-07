@@ -1,18 +1,14 @@
 {
-  "@context": "https://iiif.io/api/presentation/3/context.json",
-  "id": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
-  "type": "Collection",
-  "label": {
-    "en": [
-      "Sangaku Archive Preview Collection 1 April 2026"
-    ]
-  },
-  "summary": {
-    "en": [
-      "Sangaku archive preview."
-    ]
-  },
-  "items": [
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://tonothan.github.io/sangaku-archive-samplecollection.json",
+    "type": "Collection",
+    "label": {
+      "en": ["Sangaku Archive Preview Collection 7 April 2026"]
+    },
+    "summary": {
+      "en": ["Sangaku archive preview."]
+    },
+    "items": [
 {
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/1806_Hokkaido_Nikahhu_96.json",
 "type": "Manifest"
@@ -3634,17 +3630,15 @@
 "id": "https://sangaku-archive.org/app/api/sangaku_manifests/3/Unknown_Niigata_Yosaka_2032.json",
 "type": "Manifest"
 }
-     ],
-  "seeAlso": [
-    {
-      "id": "https://example.org/api/sangaku-metadata",
-      "type": "Dataset",
-      "format": "application/json",
-      "label": {
-        "en": [
-          "Additional Sangaku Metadata"
-        ]
+       ],
+    "seeAlso": [
+      {
+        "id": "https://example.org/api/sangaku-metadata",
+        "type": "Dataset",
+        "format": "application/json",
+        "label": {
+          "en": ["Additional Sangaku Metadata"]
+        }
       }
-    }
-  ]
-}
+    ]
+  }
