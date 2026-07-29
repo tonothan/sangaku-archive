@@ -93,6 +93,6 @@
   },
   "theme": {
     "defaultTheme": "light",
-    "toggleEnabled": true
+    "toggleEnabled": false
   }
 }
