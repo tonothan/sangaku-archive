@@ -1,0 +1,363 @@
+
+{
+@context: "http://iiif.io/api/presentation/3/context.json",
+"id": "https://sangaku-archive.org/iiif/dochu-nikki_collection.json",
+"type": "Collection",
+label: {
+en: [
+"Dochu Nikki"
+],
+ja: [
+"途中日記"
+]
+},
+summary: {
+en: [
+"A collection of  sangaku recorded in Yamaguchi Kazu's Dochu Nikki."
+],
+ja: [
+"途中日記"
+]
+},
+items: [
+{"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1803_Ibaraki_Yasaka_1948.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1817_Chiba_Sobataka_1949.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1801_Chiba_Kozaki_1950.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1816_Chiba_Kozaki_1951.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1816_Chiba_Kozaki_1952.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1796_Chiba_Ryushoin_1953.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1805_Chiba_Oji_1954.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Bunka_Chiba_Oji_1955.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1817_Chiba_Kaijo_1956.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1796_Chiba_Habu_1957.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1816_Chiba_Naritasan_1958.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1817_Chiba_Naritasan_1959.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1809_Ibaraki_Fudoin_1960.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Chiba_Kannon_1961.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1816_Chiba_Hachiman_1962.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1805_Chiba_Iitsuna_1963.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1810_Chiba_Iitsuna_1964.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1808_Chiba_Iitsuna_1965.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Ibaraki_Tsukubasan_1966.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1792_Ibaraki_Tsukubasan_1967.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Miyagi_Baikeiji_1968.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1818_Miyagi_Kinkasan_1969.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1804_Miyagi_Yokoyama_1970.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Miyagi_Tsutsujigaoka_1971.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1759_Miyagi_Osaki_1972.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1812_Miyagi_Sorinji_1973.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1811_Iwate_Morioka_1974.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1809_Iwate_Morioka_1975.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Iwate_Morioka_1976.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1817_Akita_Koshio_1977.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1797_Akita_Shiokoshi_1978.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1812_Yamagata_Shinjo_1979.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1801_Yamagata_Shinjo_1980.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1801_Gumma_Kumano_1981.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1805_Nagano_Sakaki_1982.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1795_Nagano_Takemizuwake_1983.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Nagano_Zenkoji_1984.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1796_Nagano_Zenkoji_1985.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1815_Nagano_Zenkoji_1986.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Nagano_Zenkoji_1987.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1803_Niigata_Yasaka_1988.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1805_Niigata_Horoo_1989.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1804_Niigata_Aoshi_1990.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1798_Niigata_Aoshi_1991.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1806_Niigata_Gochi_1992.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1807_Fukui_Fukutsuji_1993.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1811_Kagawa_Kotohira_1994.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Shiga_Unknown_1995.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Shiga_Unknown_1996.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1786_Mie_Shohoji_1997.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1821_Mie_Shohoji_1998.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Nara_Kofukuji_1999.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1816_Wakayama_Hinokuma_2000.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1812_Osaka_Osaka_2001.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1815_Osaka_Osaka_2002.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1822_Osaka_Osaka_2003.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1821_Hyogo_Engyoji_2004.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1820_Hyogo_Hakusan_2005.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1800_Hyogo_Hakusan_2006.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1821_Hyogo_Hakusan_2007.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1777_Hyogo_Hakusan_2008.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1800_Hyogo_Hakusan_2009.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1818_Hyogo_Hakusan_2010.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1815_Hyogo_Hakusan_2011.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1804_Okayama_Kibitsu_2012.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Hiroshima_Ikari_2013.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1807_Fukuoka_Hakozaki_2014.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1819_Nagasaki_Suwa_2015.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1808_Fukuoka_Koura_2016.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1748_Shiga_Ashizumi_2017.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1817_Shiga_Onjouji_2018.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1806_Shiga_Onjouji_2019.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1821_Shiga_Onjouji_2020.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1812_Kyoto_Kiyomizudera_2021.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1810_Shiga_Ishiyamadera_2022.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1819_Kyoto_Kitano_2023.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1819_Kyoto_Kitano_2024.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1822_Kyoto_Kiyomizudera_2025.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Osaka_Takeda_2026.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Osaka_Osaka_2027.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1821_Mie_Seki_2028.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1822_Shizuoka_Hamamatsu_2029.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1795_Niigata_Kinpu_2030.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1800_Niigata_Hakusan_2031.json",
+"type": "Manifest"
+},
+{
+"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/Unknown_Niigata_Yosaka_2032.json",
+"type": "Manifest"
+}
+]
+}
