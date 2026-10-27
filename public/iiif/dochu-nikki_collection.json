@@ -1,25 +1,25 @@
 
 {
-@context: "http://iiif.io/api/presentation/3/context.json",
+"@context": "http://iiif.io/api/presentation/3/context.json",
 "id": "https://sangaku-archive.org/iiif/dochu-nikki_collection.json",
 "type": "Collection",
-label: {
-en: [
+"label": {
+"en": [
 "Dochu Nikki"
 ],
-ja: [
+"ja": [
 "途中日記"
 ]
 },
-summary: {
-en: [
+"summary": {
+"en": [
 "A collection of  sangaku recorded in Yamaguchi Kazu's Dochu Nikki."
 ],
-ja: [
+"ja": [
 "途中日記"
 ]
 },
-items: [
+"items": [
 {"id": "https://sangaku-archive.com/app/api/sangaku_manifests/3/1803_Ibaraki_Yasaka_1948.json",
 "type": "Manifest"
 },
